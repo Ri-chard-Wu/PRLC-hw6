@@ -29,7 +29,7 @@ double fRand(double fMin, double fMax)
 
 void generate_random_doubles(double *arr, int n){
     for(int i = 0; i < n; i++){
-        arr[i] = fRand(0., 10000.);
+        arr[i] = fRand(0., 50000.);
     }
 }
 
@@ -45,14 +45,15 @@ __global__ void cuda_reduction(double *arr, int n, double *ret) {
     sm_double[tid] = arr[tid];
     __syncthreads();
 
-    for(unsigned int s = 1; s < blockDim.x; s *= 2) {
+
+    for (unsigned int s = blockDim.x / 2; s > 0; s >>= 1) {
         
-        if (tid % (2 * s) == 0) {
+        if (tid < s) {
             sm_double[tid] = min(sm_double[tid], sm_double[tid + s]);
         }
+
         __syncthreads();
     }
-
 
     if (tid == 0) *ret = sm_double[0];
 }
