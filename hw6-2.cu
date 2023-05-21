@@ -35,6 +35,17 @@ void generate_random_doubles(double *arr, int n){
 
 
 
+__global__ void sleep_cycles(clock_t clock_count)
+{
+    clock_t start_clock = clock();
+    clock_t clock_offset = 0;
+    while (clock_offset < clock_count)
+    {
+        clock_offset = clock() - start_clock;
+    }
+}
+
+
 __global__ void cuda_reduction(double *arr, int n, double *ret) {
    
     unsigned int tid = threadIdx.x;

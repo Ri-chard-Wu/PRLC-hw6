@@ -36,23 +36,36 @@ void generate_random_doubles(double *arr, int n){
 }
 
 
-typedef int ull_t;
+typedef unsigned long long int ull_t;
 
 
-// __device__ void mutex_lock(unsigned int *mutex) {
-//     unsigned int ns = 8;
-//     while (atomicCAS(mutex, 0, 1) == 1) {
-//         __nanosleep(ns);
-//         if (ns < 256) {
-//             ns *= 2;
-//         }
-//     }
-// }
 
 
-// __device__ void mutex_unlock(unsigned int *mutex) {
-//     atomicExch(mutex, 0);
-// }
+__device__ void sleep_cycles(clock_t clock_count)
+{
+    clock_t start_clock = clock();
+    clock_t clock_offset = 0;
+    while (clock_offset < clock_count)
+    {
+        clock_offset = clock() - start_clock;
+    }
+}
+
+
+__device__ void mutex_lock(unsigned int *mutex) {
+    unsigned int ns = 8;
+    while (atomicCAS(mutex, 0, 1) == 1) {
+        sleep_cycles(ns);
+        if (ns < 256) {
+            ns *= 2;
+        }
+    }
+}
+
+
+__device__ void mutex_unlock(unsigned int *mutex) {
+    atomicExch(mutex, 0);
+}
 
 
 
@@ -61,11 +74,18 @@ __global__ void cuda_reduction(ull_t *arr, int n, ull_t *ret) {
     unsigned int tid = threadIdx.x;
 
     ull_t item_local = arr[tid];
-    // __syncthreads();
+    __shared__ unsigned int mutex[1];
+    mutex[0] = 0;
 
-    mutex_lock
+    __syncthreads();
 
-    atomicMin(ret, item_local);
+    mutex_lock(mutex);
+
+    if(*ret > item_local){
+        *ret = item_local;
+    }
+
+    mutex_unlock(mutex);
 }
 
 
