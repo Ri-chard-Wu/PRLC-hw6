@@ -1,6 +1,5 @@
 #include <iostream>
 #include <random>
-#include <cstring>
 
 #define N 1024
 typedef unsigned int WORD;
@@ -21,7 +20,6 @@ double CPU_reduction(double *arr, int n) {
 }
 
 
-
 double fRand(double fMin, double fMax)
 {
     double f = (double)rand() / RAND_MAX;
@@ -36,24 +34,7 @@ void generate_random_doubles(double *arr, int n){
 }
 
 
-typedef int ull_t;
-
-
-// __device__ void mutex_lock(unsigned int *mutex) {
-//     unsigned int ns = 8;
-//     while (atomicCAS(mutex, 0, 1) == 1) {
-//         __nanosleep(ns);
-//         if (ns < 256) {
-//             ns *= 2;
-//         }
-//     }
-// }
-
-
-// __device__ void mutex_unlock(unsigned int *mutex) {
-//     atomicExch(mutex, 0);
-// }
-
+typedef unsigned long long int ull_t;
 
 
 __global__ void cuda_reduction(ull_t *arr, int n, ull_t *ret) {
@@ -61,9 +42,7 @@ __global__ void cuda_reduction(ull_t *arr, int n, ull_t *ret) {
     unsigned int tid = threadIdx.x;
 
     ull_t item_local = arr[tid];
-    // __syncthreads();
-
-    mutex_lock
+    __syncthreads();
 
     atomicMin(ret, item_local);
 }
@@ -89,12 +68,9 @@ int main() {
 
     ull_t mask = ((ull_t)1) << 63; 
 
-    memcpy(arr_ull, arr, N * sizeof(ull_t));
-
     for(int i = 0;i < N; i++){
-        arr_ull[i] ^= mask;
+        arr_ull[i] = ((ull_t)(arr[i])) ^ mask;
     }
-
 
     ull_t *ret_ull_dev;
     ull_t *arr_ull_dev;
@@ -108,10 +84,7 @@ int main() {
     cudaDeviceSynchronize();
 
     cudaMemcpy((BYTE *)ret_ull, (BYTE *)ret_ull_dev, 1 * sizeof(ull_t), cudaMemcpyDeviceToHost);
-    
-    (*ret_ull) ^= mask;
-    memcpy(ret_double, ret_ull, sizeof(ull_t));
-    std::cout << "[main] (cuda) The minimum value: " << *ret_double << '\n';
+    std::cout << "[main] (cuda) The minimum value: " << ((double)((*ret_ull) ^ mask)) << '\n';
 
     *ret_double = CPU_reduction(arr, N);
     std::cout << "[main] (cpu) The minimum value: " << *ret_double << '\n';

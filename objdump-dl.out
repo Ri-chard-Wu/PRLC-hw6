@@ -1,0 +1,262 @@
+
+hw6-3.exe:     file format elf64-x86-64
+
+SYMBOL TABLE:
+0000000000000238 l    d  .interp	0000000000000000              .interp
+0000000000000254 l    d  .note.ABI-tag	0000000000000000              .note.ABI-tag
+0000000000000274 l    d  .note.gnu.build-id	0000000000000000              .note.gnu.build-id
+0000000000000298 l    d  .gnu.hash	0000000000000000              .gnu.hash
+00000000000002c0 l    d  .dynsym	0000000000000000              .dynsym
+00000000000005f0 l    d  .dynstr	0000000000000000              .dynstr
+00000000000008f0 l    d  .gnu.version	0000000000000000              .gnu.version
+0000000000000938 l    d  .gnu.version_r	0000000000000000              .gnu.version_r
+0000000000000a08 l    d  .rela.dyn	0000000000000000              .rela.dyn
+0000000000001ff8 l    d  .rela.plt	0000000000000000              .rela.plt
+0000000000002250 l    d  .init	0000000000000000              .init
+0000000000002270 l    d  .plt	0000000000000000              .plt
+0000000000002410 l    d  .plt.got	0000000000000000              .plt.got
+0000000000002420 l    d  .text	0000000000000000              .text
+0000000000007de0 l    d  .fini	0000000000000000              .fini
+0000000000007e00 l    d  .rodata	0000000000000000              .rodata
+000000000000b100 l    d  __nv_module_id	0000000000000000              __nv_module_id
+000000000000b198 l    d  .nv_fatbin	0000000000000000              .nv_fatbin
+000000000000b4b8 l    d  __nv_relfatbin	0000000000000000              __nv_relfatbin
+00000000000aa8e0 l    d  .eh_frame_hdr	0000000000000000              .eh_frame_hdr
+00000000000aabe8 l    d  .eh_frame	0000000000000000              .eh_frame
+00000000000ab590 l    d  .gcc_except_table	0000000000000000              .gcc_except_table
+00000000002ac278 l    d  .init_array	0000000000000000              .init_array
+00000000002ac298 l    d  .fini_array	0000000000000000              .fini_array
+00000000002ac2a0 l    d  .data.rel.ro	0000000000000000              .data.rel.ro
+00000000002accc0 l    d  .dynamic	0000000000000000              .dynamic
+00000000002acef0 l    d  .got	0000000000000000              .got
+00000000002ad000 l    d  .data	0000000000000000              .data
+00000000002ad018 l    d  .nvFatBinSegment	0000000000000000              .nvFatBinSegment
+00000000002ad060 l    d  .bss	0000000000000000              .bss
+0000000000000000 l    d  .comment	0000000000000000              .comment
+0000000000000000 l    df *ABS*	0000000000000000              crtstuff.c
+0000000000002450 l     F .text	0000000000000000              deregister_tm_clones
+0000000000002490 l     F .text	0000000000000000              register_tm_clones
+00000000000024e0 l     F .text	0000000000000000              __do_global_dtors_aux
+00000000002ad170 l     O .bss	0000000000000001              completed.7698
+00000000002ac298 l     O .fini_array	0000000000000000              __do_global_dtors_aux_fini_array_entry
+0000000000002520 l     F .text	0000000000000000              frame_dummy
+00000000002ac278 l     O .init_array	0000000000000000              __frame_dummy_init_array_entry
+0000000000000000 l    df *ABS*	0000000000000000              link.stub
+00000000002ad180 l     O .bss	0000000000000008              _ZL20__cudaFatCubinHandle
+000000000000252a l     F .text	0000000000000016              __cudaUnregisterBinaryUtil
+000000000000b100 l     O __nv_module_id	0000000000000038              _ZL68def_module_id_str_38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37
+00000000002ad188 l     O .bss	0000000000000008              _ZZ77__cudaRegisterLinkedBinary_38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37E3__p
+0000000000002590 l     F .text	0000000000000111              _ZL26__cudaRegisterLinkedBinaryPK19__fatBinC_Wrapper_tPFvPPvES2_
+00000000002ad190 l     O .bss	0000000000000010              _ZL22__cudaPrelinkedFatbins
+000000000000b198 l       .nv_fatbin	0000000000000000              fatbinData
+00000000002ad018 l     O .nvFatBinSegment	0000000000000018              _ZL15__fatDeviceText
+00000000002ad1a0 l     O .bss	0000000000000010              _ZZL26__cudaRegisterLinkedBinaryPK19__fatBinC_Wrapper_tPFvPPvES2_E16__callback_array
+00000000002ad1b0 l     O .bss	0000000000000004              _ZZL26__cudaRegisterLinkedBinaryPK19__fatBinC_Wrapper_tPFvPPvES2_E3__i
+0000000000000000 l    df *ABS*	0000000000000000              tmpxft_00000bb4_00000000-5_hw6-3.cudafe1.cpp
+00000000002ad1b8 l     O .bss	0000000000000001              _ZL22__nv_inited_managed_rt
+00000000002ad1c0 l     O .bss	0000000000000008              _ZL32__nv_fatbinhandle_for_managed_rt
+00000000000026a1 l     F .text	0000000000000016              _ZL37__nv_save_fatbinhandle_for_managed_rtPPv
+00000000000026b7 l     F .text	000000000000003d              _ZL3mindd
+0000000000007e08 l     O .rodata	0000000000000001              _ZStL19piecewise_construct
+00000000002ad1c8 l     O .bss	0000000000000001              _ZStL8__ioinit
+0000000000002cef l     F .text	0000000000000025              _Z10cudaMallocIdE9cudaErrorPPT_m
+00000000002ad1d0 l     O .bss	0000000000000008              _ZZL22____nv_dummy_param_refPvE5__ref
+0000000000002a69 l     F .text	0000000000000016              _ZL22____nv_dummy_param_refPv
+000000000000b138 l     O __nv_module_id	000000000000000f              _ZL15__module_id_str
+00000000002ad1d8 l     O .bss	0000000000000008              _ZL20__cudaFatCubinHandle
+0000000000002a7f l     F .text	0000000000000022              _ZL26__cudaUnregisterBinaryUtilv
+0000000000002aa1 l     F .text	000000000000001a              _ZL32__nv_init_managed_rt_with_modulePPv
+000000000000b1a8 l       .nv_fatbin	0000000000000000              fatbinData
+00000000002ad030 l     O .nvFatBinSegment	0000000000000018              _ZL15__fatDeviceText
+00000000002ad1e0 l     O .bss	0000000000000008              _ZZ37__device_stub__Z14cuda_reductionPdiS_PdiS_E3__f
+0000000000002d14 l     F .text	0000000000000054              _Z16cudaLaunchKernelIcE9cudaErrorPKT_4dim3S4_PPvmP11CUstream_st
+00000000002ad1e8 l     O .bss	0000000000000008              _ZZL31__nv_cudaEntityRegisterCallbackPPvE5__ref
+0000000000002c3c l     F .text	000000000000005f              _ZL31__nv_cudaEntityRegisterCallbackPPv
+0000000000002c9b l     F .text	0000000000000054              _ZL24__sti____cudaRegisterAllv
+0000000000002d68 l     F .text	0000000000000049              _Z41__static_initialization_and_destruction_0ii
+0000000000002db1 l     F .text	0000000000000015              _GLOBAL__sub_I__Z13CPU_reductionPdi
+0000000000000000 l    df *ABS*	0000000000000000              cuda_device_runtime.compute_75.cudafe1.cpp
+000000000000b4b8 l       __nv_relfatbin	0000000000000000              fatbinData
+0000000000007d20 l     F .text	0000000000000021              _GLOBAL__I_cudartErrorTable
+0000000000002e00 l     F .text	0000000000000008              _Z22____nv_dummy_param_refPv
+00000000002ad218 l     O .bss	0000000000000008              _ZZ22____nv_dummy_param_refPvE5__ref
+0000000000002e10 l     F .text	0000000000000021              _Z24__sti____cudaRegisterAllv
+000000000000b160 l     O __nv_module_id	0000000000000034              __module_id_str
+0000000000002e40 l     F .text	0000000000000ad4              _Z31__nv_cudaEntityRegisterCallbackPPv
+0000000000003b50 l     F .text	0000000000000005              _Z16memcpy_3d_deviceImLi1ELi1ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_
+00000000002ad320 l     O .bss	0000000000000008              _ZZ31__nv_cudaEntityRegisterCallbackPPvE5__ref
+00000000002ad328 l     O .bss	0000000000000008              __nv_fatbinhandle_for_managed_rt
+0000000000003d90 l     F .text	0000000000000005              _Z16memcpy_3d_deviceImLi1ELi1ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_
+0000000000003fd0 l     F .text	0000000000000005              _Z16memcpy_3d_deviceImLi1ELi0ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_
+0000000000004210 l     F .text	0000000000000005              _Z16memcpy_3d_deviceImLi1ELi0ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_
+0000000000004450 l     F .text	0000000000000005              _Z16memcpy_3d_deviceImLi0ELi1ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_
+0000000000004690 l     F .text	0000000000000005              _Z16memcpy_3d_deviceImLi0ELi1ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_
+00000000000048d0 l     F .text	0000000000000005              _Z16memcpy_3d_deviceImLi0ELi0ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_
+0000000000004b10 l     F .text	0000000000000005              _Z16memcpy_3d_deviceImLi0ELi0ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_
+0000000000004d40 l     F .text	0000000000000005              _Z16memcpy_3d_deviceIjLi1ELi1ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_
+0000000000004f70 l     F .text	0000000000000005              _Z16memcpy_3d_deviceIjLi1ELi1ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_
+00000000000051a0 l     F .text	0000000000000005              _Z16memcpy_3d_deviceIjLi1ELi0ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_
+00000000000053d0 l     F .text	0000000000000005              _Z16memcpy_3d_deviceIjLi1ELi0ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_
+0000000000005600 l     F .text	0000000000000005              _Z16memcpy_3d_deviceIjLi0ELi1ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_
+0000000000005830 l     F .text	0000000000000005              _Z16memcpy_3d_deviceIjLi0ELi1ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_
+0000000000005a60 l     F .text	0000000000000005              _Z16memcpy_3d_deviceIjLi0ELi0ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_
+0000000000005c90 l     F .text	0000000000000005              _Z16memcpy_3d_deviceIjLi0ELi0ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_
+0000000000005ea0 l     F .text	0000000000000009              _Z16memset_3d_deviceImLi1ELi1ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_
+00000000000060b0 l     F .text	0000000000000009              _Z16memset_3d_deviceImLi1ELi1ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_
+00000000000062c0 l     F .text	0000000000000009              _Z16memset_3d_deviceImLi1ELi0ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_
+00000000000064d0 l     F .text	0000000000000009              _Z16memset_3d_deviceImLi1ELi0ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_
+00000000000066e0 l     F .text	0000000000000009              _Z16memset_3d_deviceImLi0ELi1ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_
+00000000000068f0 l     F .text	0000000000000009              _Z16memset_3d_deviceImLi0ELi1ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_
+0000000000006b00 l     F .text	0000000000000009              _Z16memset_3d_deviceImLi0ELi0ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_
+0000000000006d10 l     F .text	0000000000000009              _Z16memset_3d_deviceImLi0ELi0ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_
+0000000000006f10 l     F .text	0000000000000009              _Z16memset_3d_deviceIjLi1ELi1ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_
+0000000000007110 l     F .text	0000000000000009              _Z16memset_3d_deviceIjLi1ELi1ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_
+0000000000007310 l     F .text	0000000000000009              _Z16memset_3d_deviceIjLi1ELi0ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_
+0000000000007510 l     F .text	0000000000000009              _Z16memset_3d_deviceIjLi1ELi0ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_
+0000000000007710 l     F .text	0000000000000009              _Z16memset_3d_deviceIjLi0ELi1ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_
+0000000000007910 l     F .text	0000000000000009              _Z16memset_3d_deviceIjLi0ELi1ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_
+0000000000007b10 l     F .text	0000000000000009              _Z16memset_3d_deviceIjLi0ELi0ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_
+0000000000007d10 l     F .text	0000000000000009              _Z16memset_3d_deviceIjLi0ELi0ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_
+00000000002ad220 l     O .bss	0000000000000040              set_kernel32
+00000000002ad260 l     O .bss	0000000000000040              set_kernel64
+00000000002ad2a0 l     O .bss	0000000000000040              cpy_kernel32
+00000000002ad2e0 l     O .bss	0000000000000040              cpy_kernel64
+00000000002ac2a0 l     O .data.rel.ro	0000000000000a20              cudartErrorTableArr
+000000000000b080 l     O .rodata	0000000000000068              cudartErrorCnpMapArr
+0000000000003920 l     F .text	0000000000000224              _Z92__device_stub__Z16memcpy_3d_deviceImLi1ELi1ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_PKhPhmmmmmmmjjjjjjjjmS0_S1_
+00000000002ad428 l     O .bss	0000000000000008              _ZZ92__device_stub__Z16memcpy_3d_deviceImLi1ELi1ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_PKhPhmmmmmmmjjjjjjjjmS0_S1_E3__f
+0000000000003b60 l     F .text	0000000000000224              _Z92__device_stub__Z16memcpy_3d_deviceImLi1ELi1ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_PKhPhmmmmmmmjjjjjjjjmS0_S1_
+00000000002ad420 l     O .bss	0000000000000008              _ZZ92__device_stub__Z16memcpy_3d_deviceImLi1ELi1ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_PKhPhmmmmmmmjjjjjjjjmS0_S1_E3__f
+0000000000003da0 l     F .text	0000000000000224              _Z92__device_stub__Z16memcpy_3d_deviceImLi1ELi0ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_PKhPhmmmmmmmjjjjjjjjmS0_S1_
+00000000002ad418 l     O .bss	0000000000000008              _ZZ92__device_stub__Z16memcpy_3d_deviceImLi1ELi0ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_PKhPhmmmmmmmjjjjjjjjmS0_S1_E3__f
+0000000000003fe0 l     F .text	0000000000000224              _Z92__device_stub__Z16memcpy_3d_deviceImLi1ELi0ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_PKhPhmmmmmmmjjjjjjjjmS0_S1_
+00000000002ad410 l     O .bss	0000000000000008              _ZZ92__device_stub__Z16memcpy_3d_deviceImLi1ELi0ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_PKhPhmmmmmmmjjjjjjjjmS0_S1_E3__f
+0000000000004220 l     F .text	0000000000000224              _Z92__device_stub__Z16memcpy_3d_deviceImLi0ELi1ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_PKhPhmmmmmmmjjjjjjjjmS0_S1_
+00000000002ad408 l     O .bss	0000000000000008              _ZZ92__device_stub__Z16memcpy_3d_deviceImLi0ELi1ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_PKhPhmmmmmmmjjjjjjjjmS0_S1_E3__f
+0000000000004460 l     F .text	0000000000000224              _Z92__device_stub__Z16memcpy_3d_deviceImLi0ELi1ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_PKhPhmmmmmmmjjjjjjjjmS0_S1_
+00000000002ad400 l     O .bss	0000000000000008              _ZZ92__device_stub__Z16memcpy_3d_deviceImLi0ELi1ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_PKhPhmmmmmmmjjjjjjjjmS0_S1_E3__f
+00000000000046a0 l     F .text	0000000000000224              _Z92__device_stub__Z16memcpy_3d_deviceImLi0ELi0ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_PKhPhmmmmmmmjjjjjjjjmS0_S1_
+00000000002ad3f8 l     O .bss	0000000000000008              _ZZ92__device_stub__Z16memcpy_3d_deviceImLi0ELi0ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_PKhPhmmmmmmmjjjjjjjjmS0_S1_E3__f
+00000000000048e0 l     F .text	0000000000000224              _Z92__device_stub__Z16memcpy_3d_deviceImLi0ELi0ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_PKhPhmmmmmmmjjjjjjjjmS0_S1_
+00000000002ad3f0 l     O .bss	0000000000000008              _ZZ92__device_stub__Z16memcpy_3d_deviceImLi0ELi0ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_PKhPhmmmmmmmjjjjjjjjmS0_S1_E3__f
+0000000000004b20 l     F .text	000000000000021c              _Z92__device_stub__Z16memcpy_3d_deviceIjLi1ELi1ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_PKhPhjjjjjjjjjjjjjjjjS0_S1_
+00000000002ad3e8 l     O .bss	0000000000000008              _ZZ92__device_stub__Z16memcpy_3d_deviceIjLi1ELi1ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_PKhPhjjjjjjjjjjjjjjjjS0_S1_E3__f
+0000000000004d50 l     F .text	000000000000021c              _Z92__device_stub__Z16memcpy_3d_deviceIjLi1ELi1ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_PKhPhjjjjjjjjjjjjjjjjS0_S1_
+00000000002ad3e0 l     O .bss	0000000000000008              _ZZ92__device_stub__Z16memcpy_3d_deviceIjLi1ELi1ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_PKhPhjjjjjjjjjjjjjjjjS0_S1_E3__f
+0000000000004f80 l     F .text	000000000000021c              _Z92__device_stub__Z16memcpy_3d_deviceIjLi1ELi0ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_PKhPhjjjjjjjjjjjjjjjjS0_S1_
+00000000002ad3d8 l     O .bss	0000000000000008              _ZZ92__device_stub__Z16memcpy_3d_deviceIjLi1ELi0ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_PKhPhjjjjjjjjjjjjjjjjS0_S1_E3__f
+00000000000051b0 l     F .text	000000000000021c              _Z92__device_stub__Z16memcpy_3d_deviceIjLi1ELi0ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_PKhPhjjjjjjjjjjjjjjjjS0_S1_
+00000000002ad3d0 l     O .bss	0000000000000008              _ZZ92__device_stub__Z16memcpy_3d_deviceIjLi1ELi0ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_PKhPhjjjjjjjjjjjjjjjjS0_S1_E3__f
+00000000000053e0 l     F .text	000000000000021c              _Z92__device_stub__Z16memcpy_3d_deviceIjLi0ELi1ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_PKhPhjjjjjjjjjjjjjjjjS0_S1_
+00000000002ad3c8 l     O .bss	0000000000000008              _ZZ92__device_stub__Z16memcpy_3d_deviceIjLi0ELi1ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_PKhPhjjjjjjjjjjjjjjjjS0_S1_E3__f
+0000000000005610 l     F .text	000000000000021c              _Z92__device_stub__Z16memcpy_3d_deviceIjLi0ELi1ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_PKhPhjjjjjjjjjjjjjjjjS0_S1_
+00000000002ad3c0 l     O .bss	0000000000000008              _ZZ92__device_stub__Z16memcpy_3d_deviceIjLi0ELi1ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_PKhPhjjjjjjjjjjjjjjjjS0_S1_E3__f
+0000000000005840 l     F .text	000000000000021c              _Z92__device_stub__Z16memcpy_3d_deviceIjLi0ELi0ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_PKhPhjjjjjjjjjjjjjjjjS0_S1_
+00000000002ad3b8 l     O .bss	0000000000000008              _ZZ92__device_stub__Z16memcpy_3d_deviceIjLi0ELi0ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_PKhPhjjjjjjjjjjjjjjjjS0_S1_E3__f
+0000000000005a70 l     F .text	000000000000021c              _Z92__device_stub__Z16memcpy_3d_deviceIjLi0ELi0ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_PKhPhjjjjjjjjjjjjjjjjS0_S1_
+00000000002ad3b0 l     O .bss	0000000000000008              _ZZ92__device_stub__Z16memcpy_3d_deviceIjLi0ELi0ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_PKhPhjjjjjjjjjjjjjjjjS0_S1_E3__f
+0000000000005ca0 l     F .text	00000000000001f3              _Z81__device_stub__Z16memset_3d_deviceImLi1ELi1ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_PhhjmmmmmjjjjjjjmS_
+00000000002ad3a8 l     O .bss	0000000000000008              _ZZ81__device_stub__Z16memset_3d_deviceImLi1ELi1ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_PhhjmmmmmjjjjjjjmS_E3__f
+0000000000005eb0 l     F .text	00000000000001f3              _Z81__device_stub__Z16memset_3d_deviceImLi1ELi1ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_PhhjmmmmmjjjjjjjmS_
+00000000002ad3a0 l     O .bss	0000000000000008              _ZZ81__device_stub__Z16memset_3d_deviceImLi1ELi1ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_PhhjmmmmmjjjjjjjmS_E3__f
+00000000000060c0 l     F .text	00000000000001f3              _Z81__device_stub__Z16memset_3d_deviceImLi1ELi0ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_PhhjmmmmmjjjjjjjmS_
+00000000002ad398 l     O .bss	0000000000000008              _ZZ81__device_stub__Z16memset_3d_deviceImLi1ELi0ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_PhhjmmmmmjjjjjjjmS_E3__f
+00000000000062d0 l     F .text	00000000000001f3              _Z81__device_stub__Z16memset_3d_deviceImLi1ELi0ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_PhhjmmmmmjjjjjjjmS_
+00000000002ad390 l     O .bss	0000000000000008              _ZZ81__device_stub__Z16memset_3d_deviceImLi1ELi0ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_PhhjmmmmmjjjjjjjmS_E3__f
+00000000000064e0 l     F .text	00000000000001f3              _Z81__device_stub__Z16memset_3d_deviceImLi0ELi1ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_PhhjmmmmmjjjjjjjmS_
+00000000002ad388 l     O .bss	0000000000000008              _ZZ81__device_stub__Z16memset_3d_deviceImLi0ELi1ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_PhhjmmmmmjjjjjjjmS_E3__f
+00000000000066f0 l     F .text	00000000000001f3              _Z81__device_stub__Z16memset_3d_deviceImLi0ELi1ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_PhhjmmmmmjjjjjjjmS_
+00000000002ad380 l     O .bss	0000000000000008              _ZZ81__device_stub__Z16memset_3d_deviceImLi0ELi1ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_PhhjmmmmmjjjjjjjmS_E3__f
+0000000000006900 l     F .text	00000000000001f3              _Z81__device_stub__Z16memset_3d_deviceImLi0ELi0ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_PhhjmmmmmjjjjjjjmS_
+00000000002ad378 l     O .bss	0000000000000008              _ZZ81__device_stub__Z16memset_3d_deviceImLi0ELi0ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_PhhjmmmmmjjjjjjjmS_E3__f
+0000000000006b10 l     F .text	00000000000001f3              _Z81__device_stub__Z16memset_3d_deviceImLi0ELi0ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_PhhjmmmmmjjjjjjjmS_
+00000000002ad370 l     O .bss	0000000000000008              _ZZ81__device_stub__Z16memset_3d_deviceImLi0ELi0ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_PhhjmmmmmjjjjjjjmS_E3__f
+0000000000006d20 l     F .text	00000000000001ec              _Z81__device_stub__Z16memset_3d_deviceIjLi1ELi1ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_PhhjjjjjjjjjjjjjjS_
+00000000002ad368 l     O .bss	0000000000000008              _ZZ81__device_stub__Z16memset_3d_deviceIjLi1ELi1ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_PhhjjjjjjjjjjjjjjS_E3__f
+0000000000006f20 l     F .text	00000000000001ec              _Z81__device_stub__Z16memset_3d_deviceIjLi1ELi1ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_PhhjjjjjjjjjjjjjjS_
+00000000002ad360 l     O .bss	0000000000000008              _ZZ81__device_stub__Z16memset_3d_deviceIjLi1ELi1ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_PhhjjjjjjjjjjjjjjS_E3__f
+0000000000007120 l     F .text	00000000000001ec              _Z81__device_stub__Z16memset_3d_deviceIjLi1ELi0ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_PhhjjjjjjjjjjjjjjS_
+00000000002ad358 l     O .bss	0000000000000008              _ZZ81__device_stub__Z16memset_3d_deviceIjLi1ELi0ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_PhhjjjjjjjjjjjjjjS_E3__f
+0000000000007320 l     F .text	00000000000001ec              _Z81__device_stub__Z16memset_3d_deviceIjLi1ELi0ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_PhhjjjjjjjjjjjjjjS_
+00000000002ad350 l     O .bss	0000000000000008              _ZZ81__device_stub__Z16memset_3d_deviceIjLi1ELi0ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_PhhjjjjjjjjjjjjjjS_E3__f
+0000000000007520 l     F .text	00000000000001ec              _Z81__device_stub__Z16memset_3d_deviceIjLi0ELi1ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_PhhjjjjjjjjjjjjjjS_
+00000000002ad348 l     O .bss	0000000000000008              _ZZ81__device_stub__Z16memset_3d_deviceIjLi0ELi1ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_PhhjjjjjjjjjjjjjjS_E3__f
+0000000000007720 l     F .text	00000000000001ec              _Z81__device_stub__Z16memset_3d_deviceIjLi0ELi1ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_PhhjjjjjjjjjjjjjjS_
+00000000002ad340 l     O .bss	0000000000000008              _ZZ81__device_stub__Z16memset_3d_deviceIjLi0ELi1ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_PhhjjjjjjjjjjjjjjS_E3__f
+0000000000007920 l     F .text	00000000000001ec              _Z81__device_stub__Z16memset_3d_deviceIjLi0ELi0ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_PhhjjjjjjjjjjjjjjS_
+00000000002ad338 l     O .bss	0000000000000008              _ZZ81__device_stub__Z16memset_3d_deviceIjLi0ELi0ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_PhhjjjjjjjjjjjjjjS_E3__f
+0000000000007b20 l     F .text	00000000000001ec              _Z81__device_stub__Z16memset_3d_deviceIjLi0ELi0ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_PhhjjjjjjjjjjjjjjS_
+00000000002ad330 l     O .bss	0000000000000008              _ZZ81__device_stub__Z16memset_3d_deviceIjLi0ELi0ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_PhhjjjjjjjjjjjjjjS_E3__f
+0000000000000000 l    df *ABS*	0000000000000000              crtstuff.c
+00000000000ab58c l     O .eh_frame	0000000000000000              __FRAME_END__
+0000000000000000 l    df *ABS*	0000000000000000              
+00000000000aa8e0 l       .eh_frame_hdr	0000000000000000              __GNU_EH_FRAME_HDR
+0000000000007dd0 l     F .text	000000000000000e              atexit
+00000000002accc0 l     O .dynamic	0000000000000000              _DYNAMIC
+00000000002ac298 l       .init_array	0000000000000000              __init_array_end
+00000000002ac278 l       .init_array	0000000000000000              __init_array_start
+00000000002acef0 l     O .got	0000000000000000              _GLOBAL_OFFSET_TABLE_
+0000000000000000       F *UND*	0000000000000000              _Znam@@GLIBCXX_3.4
+0000000000002dc6  w    F .text	0000000000000031              _ZN4dim3C1Ejjj
+00000000002ad060 g       .nvFatBinSegment	0000000000000000              _edata
+0000000000000000       F *UND*	0000000000000000              __cudaRegisterFunction@@libcudart.so.10.1
+0000000000000000       F *UND*	0000000000000000              rand@@GLIBC_2.2.5
+0000000000000000       F *UND*	0000000000000000              __cudaRegisterVar@@libcudart.so.10.1
+00000000002ad000  w      .data	0000000000000000              data_start
+0000000000007e00 g     O .rodata	0000000000000004              _IO_stdin_used
+0000000000000000  w    F *UND*	0000000000000000              __cxa_finalize@@GLIBC_2.2.5
+00000000002ad210 g     O .bss	0000000000000004              __CNPRT_VERSION_NUMBER__
+0000000000002804 g     F .text	0000000000000265              main
+0000000000000000       F *UND*	0000000000000000              fmin@@GLIBC_2.2.5
+00000000002ad008 g     O .data	0000000000000000              .hidden __dso_handle
+0000000000000000       F *UND*	0000000000000000              cudaMemcpy@@libcudart.so.10.1
+0000000000002abb g     F .text	0000000000000156              _Z37__device_stub__Z14cuda_reductionPdiS_PdiS_
+00000000002ad010  w    O .data	0000000000000008              .hidden DW.ref.__gxx_personality_v0
+0000000000007de0 g     F .fini	0000000000000000              _fini
+0000000000002763 g     F .text	0000000000000042              _Z5fRanddd
+0000000000000000       F *UND*	0000000000000000              cudaMalloc@@libcudart.so.10.1
+0000000000000000       F *UND*	0000000000000000              __cxa_atexit@@GLIBC_2.2.5
+00000000000027a5 g     F .text	000000000000005f              _Z23generate_random_doublesPdi
+0000000000000000       F *UND*	0000000000000000              __cudaPopCallConfiguration@@libcudart.so.10.1
+0000000000000000       F *UND*	0000000000000000              cudaDeviceSynchronize@@libcudart.so.10.1
+0000000000002420 g     F .text	000000000000002b              _start
+0000000000000000       F *UND*	0000000000000000              _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@@GLIBCXX_3.4
+0000000000000000       F *UND*	0000000000000000              _Znwm@@GLIBCXX_3.4
+0000000000000000       F *UND*	0000000000000000              _ZdlPvm@@CXXABI_1.3.9
+0000000000000000       F *UND*	0000000000000000              __stack_chk_fail@@GLIBC_2.4
+0000000000002250 g     F .init	0000000000000000              _init
+000000000000b064 g     O .rodata	0000000000000004              cudartErrorCnpMapEntryCount
+00000000002ad018 g     O .nvFatBinSegment	0000000000000000              .hidden __TMC_END__
+0000000000000000       F *UND*	0000000000000000              _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_c@@GLIBCXX_3.4
+0000000000000000       F *UND*	0000000000000000              cudaLaunchKernel@@libcudart.so.10.1
+00000000002ad200 g     O .bss	0000000000000008              cudartErrorTable
+00000000002ad060 g     O .bss	0000000000000110              _ZSt4cout@@GLIBCXX_3.4
+0000000000000000       F *UND*	0000000000000000              _ZdaPv@@GLIBCXX_3.4
+0000000000000000       F *UND*	0000000000000000              __cudaPushCallConfiguration@@libcudart.so.10.1
+00000000002ad000 g       .data	0000000000000000              __data_start
+00000000002ad430 g       .bss	0000000000000000              _end
+00000000000026f4 g     F .text	000000000000006f              _Z13CPU_reductionPdi
+0000000000002540 g     F .text	0000000000000050              __cudaRegisterLinkedBinary_38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37
+00000000002ad060 g       .bss	0000000000000000              __bss_start
+0000000000000000       F *UND*	0000000000000000              _ZNSt8ios_base4InitC1Ev@@GLIBCXX_3.4
+0000000000007d50 g     F .text	0000000000000065              __libc_csu_init
+0000000000002dc6  w    F .text	0000000000000031              _ZN4dim3C2Ejjj
+0000000000000000       F *UND*	0000000000000000              __gxx_personality_v0@@CXXABI_1.3
+000000000000b060 g     O .rodata	0000000000000004              cudartErrorTableEntryCount
+0000000000002c11 g     F .text	000000000000002b              _Z14cuda_reductionPdiS_
+0000000000000000       F *UND*	0000000000000000              __cudaRegisterFatBinaryEnd@@libcudart.so.10.1
+0000000000000000       F *UND*	0000000000000000              __cudaInitModule@@libcudart.so.10.1
+0000000000000000  w      *UND*	0000000000000000              _ITM_deregisterTMCloneTable
+00000000002ad048 g     O .nvFatBinSegment	0000000000000018              __fatbinwrap_38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37
+0000000000000000       F *UND*	0000000000000000              _Unwind_Resume@@GCC_3.0
+0000000000007dc0 g     F .text	0000000000000002              __libc_csu_fini
+0000000000000000       F *UND*	0000000000000000              __cudaRegisterFatBinary@@libcudart.so.10.1
+00000000002ad208 g     O .bss	0000000000000008              cudartErrorCnpMap
+0000000000000000       F *UND*	0000000000000000              __libc_start_main@@GLIBC_2.2.5
+0000000000000000       F *UND*	0000000000000000              __cudaUnregisterFatBinary@@libcudart.so.10.1
+0000000000000000  w      *UND*	0000000000000000              __gmon_start__
+0000000000000000       F *UND*	0000000000000000              _ZNSolsEd@@GLIBCXX_3.4
+0000000000000000  w      *UND*	0000000000000000              _ITM_registerTMCloneTable
+0000000000000000       F *UND*	0000000000000000              _ZNSt8ios_base4InitD1Ev@@GLIBCXX_3.4
+
+

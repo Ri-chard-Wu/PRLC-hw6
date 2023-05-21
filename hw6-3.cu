@@ -1,7 +1,7 @@
 #include <iostream>
 #include <random>
 
-#define N 1024
+#define N 32
 typedef unsigned int WORD;
 typedef unsigned char BYTE;
 using namespace std;
@@ -37,12 +37,17 @@ void generate_random_doubles(double *arr, int n){
 
 __global__ void cuda_reduction(double *arr, int n, double *ret) {
    
+    // printf("arr[] ==\n");
+    
     unsigned int tid = threadIdx.x;
 
     __shared__ WORD sm[N];
     double *sm_double = (double *)sm;
 
     sm_double[tid] = arr[tid];
+
+    // printf("arr[] == %f\n", arr[0]);
+
     __syncthreads();
 
 
