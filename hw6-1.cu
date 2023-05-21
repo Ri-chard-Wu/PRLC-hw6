@@ -76,7 +76,6 @@ __device__ double atomicMin_double(double* address, double val)
 
         old_value = atomicCAS(address_as_ull, assumed, new_value);
     
-    // val < __longlong_as_double(assumed) ? val : __longlong_as_double(assumed)
 
     // Note: uses integer comparison to avoid hang in case of NaN (since NaN != NaN)
     } while (assumed != old_value);
