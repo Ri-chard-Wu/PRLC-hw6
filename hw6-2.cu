@@ -33,7 +33,7 @@ void generate_random_doubles(double *arr, int n){
     }
 }
 
-
+// interleaved
 
 __global__ void cuda_reduction(double *arr, int n, double *ret) {
    

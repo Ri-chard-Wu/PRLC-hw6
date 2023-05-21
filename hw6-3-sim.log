@@ -277,7 +277,7 @@ GPGPU-Sim uArch:   28  29  30  31  32  33  34
 GPGPU-Sim uArch:   35  36  37  38  39  40  41
 GPGPU-Sim uArch:   42  43  44  45  46  47  48
 GPGPU-Sim uArch:   49  50  51
-197f048448630c3e494810dd2745e388  /root/hw6/hw6-3.exe
+5610dd7d0d64be2d178d8df910f8e4e9  /root/hw6/hw6-3.exe
 Extracting PTX file and ptxas options    1: hw6-3.1.sm_61.ptx -arch=sm_61
 GPGPU-Sim uArch: performance model initialization complete.
 self exe links to: /root/hw6/hw6-3.exe
@@ -288,7 +288,7 @@ self exe links to: /root/hw6/hw6-3.exe
 Running md5sum using "md5sum /root/hw6/hw6-3.exe "
 self exe links to: /root/hw6/hw6-3.exe
 Extracting specific PTX file named hw6-3.1.sm_61.ptx 
-GPGPU-Sim PTX: __cudaRegisterFunction _Z14cuda_reductionPdiS_ : hostFun 0x0x55bd696e5ca2, fat_cubin_handle = 1
+GPGPU-Sim PTX: __cudaRegisterFunction _Z14cuda_reductionPdiS_ : hostFun 0x0x559a468f2ca2, fat_cubin_handle = 1
 GPGPU-Sim PTX: Parsing hw6-3.1.sm_61.ptx
 GPGPU-Sim PTX: allocating shared region for "_ZZ14cuda_reductionPdiS_E2sm" from 0x0 to 0x100 (shared memory space)
 GPGPU-Sim PTX: instruction assembly for function '_Z14cuda_reductionPdiS_'...   done.
@@ -297,114 +297,114 @@ GPGPU-Sim PTX: loading globals with explicit initializers...
 GPGPU-Sim PTX: finished loading globals (0 bytes total).
 GPGPU-Sim PTX: loading constants with explicit initializers...  done.
 GPGPU-Sim PTX: Loading PTXInfo from hw6-3.1.sm_61.ptx
-GPGPU-Sim PTX: Kernel '_Z14cuda_reductionPdiS_' : regs=9, lmem=0, smem=256, cmem=344
+GPGPU-Sim PTX: Kernel '_Z14cuda_reductionPdiS_' : regs=8, lmem=0, smem=256, cmem=344
 self exe links to: /root/hw6/hw6-3.exe
 self exe links to: /root/hw6/hw6-3.exe
 10.1
 GPGPU-Sim PTX: __cudaRegisterFatBinary, fat_cubin_handle = 2, filename=default
-GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceImLi1ELi1ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_ : hostFun 0x0x55bd696e6be0, fat_cubin_handle = 2
+GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceImLi1ELi1ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_ : hostFun 0x0x559a468f3be0, fat_cubin_handle = 2
 Warning: cannot find deviceFun __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceImLi1ELi1ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_
-GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceImLi1ELi1ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_ : hostFun 0x0x55bd696e6e20, fat_cubin_handle = 2
+GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceImLi1ELi1ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_ : hostFun 0x0x559a468f3e20, fat_cubin_handle = 2
 Warning: cannot find deviceFun __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceImLi1ELi1ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_
-GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceImLi1ELi0ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_ : hostFun 0x0x55bd696e7060, fat_cubin_handle = 2
+GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceImLi1ELi0ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_ : hostFun 0x0x559a468f4060, fat_cubin_handle = 2
 Warning: cannot find deviceFun __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceImLi1ELi0ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_
-GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceImLi1ELi0ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_ : hostFun 0x0x55bd696e72a0, fat_cubin_handle = 2
+GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceImLi1ELi0ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_ : hostFun 0x0x559a468f42a0, fat_cubin_handle = 2
 Warning: cannot find deviceFun __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceImLi1ELi0ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_
-GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceImLi0ELi1ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_ : hostFun 0x0x55bd696e74e0, fat_cubin_handle = 2
+GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceImLi0ELi1ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_ : hostFun 0x0x559a468f44e0, fat_cubin_handle = 2
 Warning: cannot find deviceFun __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceImLi0ELi1ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_
-GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceImLi0ELi1ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_ : hostFun 0x0x55bd696e7720, fat_cubin_handle = 2
+GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceImLi0ELi1ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_ : hostFun 0x0x559a468f4720, fat_cubin_handle = 2
 Warning: cannot find deviceFun __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceImLi0ELi1ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_
-GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceImLi0ELi0ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_ : hostFun 0x0x55bd696e7960, fat_cubin_handle = 2
+GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceImLi0ELi0ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_ : hostFun 0x0x559a468f4960, fat_cubin_handle = 2
 Warning: cannot find deviceFun __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceImLi0ELi0ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_
-GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceImLi0ELi0ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_ : hostFun 0x0x55bd696e7ba0, fat_cubin_handle = 2
+GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceImLi0ELi0ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_ : hostFun 0x0x559a468f4ba0, fat_cubin_handle = 2
 Warning: cannot find deviceFun __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceImLi0ELi0ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_
-GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceIjLi1ELi1ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_ : hostFun 0x0x55bd696e7dd0, fat_cubin_handle = 2
+GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceIjLi1ELi1ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_ : hostFun 0x0x559a468f4dd0, fat_cubin_handle = 2
 Warning: cannot find deviceFun __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceIjLi1ELi1ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_
-GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceIjLi1ELi1ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_ : hostFun 0x0x55bd696e8000, fat_cubin_handle = 2
+GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceIjLi1ELi1ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_ : hostFun 0x0x559a468f5000, fat_cubin_handle = 2
 Warning: cannot find deviceFun __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceIjLi1ELi1ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_
-GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceIjLi1ELi0ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_ : hostFun 0x0x55bd696e8230, fat_cubin_handle = 2
+GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceIjLi1ELi0ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_ : hostFun 0x0x559a468f5230, fat_cubin_handle = 2
 Warning: cannot find deviceFun __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceIjLi1ELi0ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_
-GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceIjLi1ELi0ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_ : hostFun 0x0x55bd696e8460, fat_cubin_handle = 2
+GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceIjLi1ELi0ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_ : hostFun 0x0x559a468f5460, fat_cubin_handle = 2
 Warning: cannot find deviceFun __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceIjLi1ELi0ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_
-GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceIjLi0ELi1ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_ : hostFun 0x0x55bd696e8690, fat_cubin_handle = 2
+GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceIjLi0ELi1ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_ : hostFun 0x0x559a468f5690, fat_cubin_handle = 2
 Warning: cannot find deviceFun __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceIjLi0ELi1ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_
-GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceIjLi0ELi1ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_ : hostFun 0x0x55bd696e88c0, fat_cubin_handle = 2
+GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceIjLi0ELi1ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_ : hostFun 0x0x559a468f58c0, fat_cubin_handle = 2
 Warning: cannot find deviceFun __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceIjLi0ELi1ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_
-GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceIjLi0ELi0ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_ : hostFun 0x0x55bd696e8af0, fat_cubin_handle = 2
+GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceIjLi0ELi0ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_ : hostFun 0x0x559a468f5af0, fat_cubin_handle = 2
 Warning: cannot find deviceFun __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceIjLi0ELi0ELi1EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_
-GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceIjLi0ELi0ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_ : hostFun 0x0x55bd696e8d20, fat_cubin_handle = 2
+GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceIjLi0ELi0ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_ : hostFun 0x0x559a468f5d20, fat_cubin_handle = 2
 Warning: cannot find deviceFun __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memcpy_3d_deviceIjLi0ELi0ELi0EEvPKhPhT_S3_S3_S3_S3_S3_S3_jjjjjjjjS3_S1_S2_
-GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceImLi1ELi1ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_ : hostFun 0x0x55bd696e8f30, fat_cubin_handle = 2
+GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceImLi1ELi1ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_ : hostFun 0x0x559a468f5f30, fat_cubin_handle = 2
 Warning: cannot find deviceFun __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceImLi1ELi1ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_
-GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceImLi1ELi1ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_ : hostFun 0x0x55bd696e9140, fat_cubin_handle = 2
+GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceImLi1ELi1ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_ : hostFun 0x0x559a468f6140, fat_cubin_handle = 2
 Warning: cannot find deviceFun __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceImLi1ELi1ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_
-GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceImLi1ELi0ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_ : hostFun 0x0x55bd696e9350, fat_cubin_handle = 2
+GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceImLi1ELi0ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_ : hostFun 0x0x559a468f6350, fat_cubin_handle = 2
 Warning: cannot find deviceFun __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceImLi1ELi0ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_
-GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceImLi1ELi0ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_ : hostFun 0x0x55bd696e9560, fat_cubin_handle = 2
+GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceImLi1ELi0ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_ : hostFun 0x0x559a468f6560, fat_cubin_handle = 2
 Warning: cannot find deviceFun __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceImLi1ELi0ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_
-GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceImLi0ELi1ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_ : hostFun 0x0x55bd696e9770, fat_cubin_handle = 2
+GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceImLi0ELi1ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_ : hostFun 0x0x559a468f6770, fat_cubin_handle = 2
 Warning: cannot find deviceFun __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceImLi0ELi1ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_
-GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceImLi0ELi1ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_ : hostFun 0x0x55bd696e9980, fat_cubin_handle = 2
+GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceImLi0ELi1ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_ : hostFun 0x0x559a468f6980, fat_cubin_handle = 2
 Warning: cannot find deviceFun __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceImLi0ELi1ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_
-GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceImLi0ELi0ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_ : hostFun 0x0x55bd696e9b90, fat_cubin_handle = 2
+GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceImLi0ELi0ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_ : hostFun 0x0x559a468f6b90, fat_cubin_handle = 2
 Warning: cannot find deviceFun __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceImLi0ELi0ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_
-GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceImLi0ELi0ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_ : hostFun 0x0x55bd696e9da0, fat_cubin_handle = 2
+GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceImLi0ELi0ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_ : hostFun 0x0x559a468f6da0, fat_cubin_handle = 2
 Warning: cannot find deviceFun __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceImLi0ELi0ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_
-GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceIjLi1ELi1ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_ : hostFun 0x0x55bd696e9fa0, fat_cubin_handle = 2
+GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceIjLi1ELi1ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_ : hostFun 0x0x559a468f6fa0, fat_cubin_handle = 2
 Warning: cannot find deviceFun __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceIjLi1ELi1ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_
-GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceIjLi1ELi1ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_ : hostFun 0x0x55bd696ea1a0, fat_cubin_handle = 2
+GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceIjLi1ELi1ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_ : hostFun 0x0x559a468f71a0, fat_cubin_handle = 2
 Warning: cannot find deviceFun __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceIjLi1ELi1ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_
-GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceIjLi1ELi0ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_ : hostFun 0x0x55bd696ea3a0, fat_cubin_handle = 2
+GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceIjLi1ELi0ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_ : hostFun 0x0x559a468f73a0, fat_cubin_handle = 2
 Warning: cannot find deviceFun __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceIjLi1ELi0ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_
-GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceIjLi1ELi0ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_ : hostFun 0x0x55bd696ea5a0, fat_cubin_handle = 2
+GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceIjLi1ELi0ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_ : hostFun 0x0x559a468f75a0, fat_cubin_handle = 2
 Warning: cannot find deviceFun __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceIjLi1ELi0ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_
-GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceIjLi0ELi1ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_ : hostFun 0x0x55bd696ea7a0, fat_cubin_handle = 2
+GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceIjLi0ELi1ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_ : hostFun 0x0x559a468f77a0, fat_cubin_handle = 2
 Warning: cannot find deviceFun __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceIjLi0ELi1ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_
-GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceIjLi0ELi1ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_ : hostFun 0x0x55bd696ea9a0, fat_cubin_handle = 2
+GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceIjLi0ELi1ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_ : hostFun 0x0x559a468f79a0, fat_cubin_handle = 2
 Warning: cannot find deviceFun __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceIjLi0ELi1ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_
-GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceIjLi0ELi0ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_ : hostFun 0x0x55bd696eaba0, fat_cubin_handle = 2
+GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceIjLi0ELi0ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_ : hostFun 0x0x559a468f7ba0, fat_cubin_handle = 2
 Warning: cannot find deviceFun __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceIjLi0ELi0ELi1EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_
-GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceIjLi0ELi0ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_ : hostFun 0x0x55bd696eada0, fat_cubin_handle = 2
+GPGPU-Sim PTX: __cudaRegisterFunction __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceIjLi0ELi0ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_ : hostFun 0x0x559a468f7da0, fat_cubin_handle = 2
 Warning: cannot find deviceFun __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37__Z16memset_3d_deviceIjLi0ELi0ELi0EEvPhhjT_S1_S1_S1_S1_jjjjjjjS1_S0_
-GPGPU-Sim PTX: __cudaRegisterVar: hostVar = 0x55bd69990220; deviceAddress = __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37_set_kernel32; deviceName = __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37_set_kernel32
+GPGPU-Sim PTX: __cudaRegisterVar: hostVar = 0x559a46b9d220; deviceAddress = __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37_set_kernel32; deviceName = __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37_set_kernel32
 GPGPU-Sim PTX: __cudaRegisterVar: Registering const memory space of 64 bytes
 GPGPU-Sim PTX registering constant __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37_set_kernel32 (64 bytes) to name mapping
-GPGPU-Sim PTX: __cudaRegisterVar: hostVar = 0x55bd69990260; deviceAddress = __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37_set_kernel64; deviceName = __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37_set_kernel64
+GPGPU-Sim PTX: __cudaRegisterVar: hostVar = 0x559a46b9d260; deviceAddress = __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37_set_kernel64; deviceName = __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37_set_kernel64
 GPGPU-Sim PTX: __cudaRegisterVar: Registering const memory space of 64 bytes
 GPGPU-Sim PTX registering constant __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37_set_kernel64 (64 bytes) to name mapping
-GPGPU-Sim PTX: __cudaRegisterVar: hostVar = 0x55bd699902a0; deviceAddress = __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37_cpy_kernel32; deviceName = __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37_cpy_kernel32
+GPGPU-Sim PTX: __cudaRegisterVar: hostVar = 0x559a46b9d2a0; deviceAddress = __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37_cpy_kernel32; deviceName = __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37_cpy_kernel32
 GPGPU-Sim PTX: __cudaRegisterVar: Registering const memory space of 64 bytes
 GPGPU-Sim PTX registering constant __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37_cpy_kernel32 (64 bytes) to name mapping
-GPGPU-Sim PTX: __cudaRegisterVar: hostVar = 0x55bd699902e0; deviceAddress = __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37_cpy_kernel64; deviceName = __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37_cpy_kernel64
+GPGPU-Sim PTX: __cudaRegisterVar: hostVar = 0x559a46b9d2e0; deviceAddress = __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37_cpy_kernel64; deviceName = __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37_cpy_kernel64
 GPGPU-Sim PTX: __cudaRegisterVar: Registering const memory space of 64 bytes
 GPGPU-Sim PTX registering constant __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37_cpy_kernel64 (64 bytes) to name mapping
-GPGPU-Sim PTX: __cudaRegisterVar: hostVar = 0x55bd6998f280; deviceAddress = __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37_cudartErrorTableArr; deviceName = __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37_cudartErrorTableArr
+GPGPU-Sim PTX: __cudaRegisterVar: hostVar = 0x559a46b9c280; deviceAddress = __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37_cudartErrorTableArr; deviceName = __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37_cudartErrorTableArr
 GPGPU-Sim PTX: __cudaRegisterVar: Registering const memory space of 2592 bytes
 GPGPU-Sim PTX registering global __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37_cudartErrorTableArr hostVar to name mapping
-GPGPU-Sim PTX: __cudaRegisterVar: hostVar = 0x55bd69990200; deviceAddress = cudartErrorTable; deviceName = cudartErrorTable
+GPGPU-Sim PTX: __cudaRegisterVar: hostVar = 0x559a46b9d200; deviceAddress = cudartErrorTable; deviceName = cudartErrorTable
 GPGPU-Sim PTX: __cudaRegisterVar: Registering const memory space of 8 bytes
 GPGPU-Sim PTX registering global cudartErrorTable hostVar to name mapping
-GPGPU-Sim PTX: __cudaRegisterVar: hostVar = 0x55bd696ee0e0; deviceAddress = cudartErrorTableEntryCount; deviceName = cudartErrorTableEntryCount
+GPGPU-Sim PTX: __cudaRegisterVar: hostVar = 0x559a468fb0e0; deviceAddress = cudartErrorTableEntryCount; deviceName = cudartErrorTableEntryCount
 GPGPU-Sim PTX: __cudaRegisterVar: Registering const memory space of 4 bytes
 GPGPU-Sim PTX registering global cudartErrorTableEntryCount hostVar to name mapping
-GPGPU-Sim PTX: __cudaRegisterVar: hostVar = 0x55bd696ee100; deviceAddress = __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37_cudartErrorCnpMapArr; deviceName = __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37_cudartErrorCnpMapArr
+GPGPU-Sim PTX: __cudaRegisterVar: hostVar = 0x559a468fb100; deviceAddress = __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37_cudartErrorCnpMapArr; deviceName = __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37_cudartErrorCnpMapArr
 GPGPU-Sim PTX: __cudaRegisterVar: Registering const memory space of 104 bytes
 GPGPU-Sim PTX registering global __nv_static_51__38_cuda_device_runtime_compute_75_cpp1_ii_8b1a5d37_cudartErrorCnpMapArr hostVar to name mapping
-GPGPU-Sim PTX: __cudaRegisterVar: hostVar = 0x55bd69990208; deviceAddress = cudartErrorCnpMap; deviceName = cudartErrorCnpMap
+GPGPU-Sim PTX: __cudaRegisterVar: hostVar = 0x559a46b9d208; deviceAddress = cudartErrorCnpMap; deviceName = cudartErrorCnpMap
 GPGPU-Sim PTX: __cudaRegisterVar: Registering const memory space of 8 bytes
 GPGPU-Sim PTX registering global cudartErrorCnpMap hostVar to name mapping
-GPGPU-Sim PTX: __cudaRegisterVar: hostVar = 0x55bd696ee0e4; deviceAddress = cudartErrorCnpMapEntryCount; deviceName = cudartErrorCnpMapEntryCount
+GPGPU-Sim PTX: __cudaRegisterVar: hostVar = 0x559a468fb0e4; deviceAddress = cudartErrorCnpMapEntryCount; deviceName = cudartErrorCnpMapEntryCount
 GPGPU-Sim PTX: __cudaRegisterVar: Registering const memory space of 4 bytes
 GPGPU-Sim PTX registering global cudartErrorCnpMapEntryCount hostVar to name mapping
-GPGPU-Sim PTX: __cudaRegisterVar: hostVar = 0x55bd69990210; deviceAddress = __CNPRT_VERSION_NUMBER__; deviceName = __CNPRT_VERSION_NUMBER__
+GPGPU-Sim PTX: __cudaRegisterVar: hostVar = 0x559a46b9d210; deviceAddress = __CNPRT_VERSION_NUMBER__; deviceName = __CNPRT_VERSION_NUMBER__
 GPGPU-Sim PTX: __cudaRegisterVar: Registering const memory space of 4 bytes
 GPGPU-Sim PTX registering global __CNPRT_VERSION_NUMBER__ hostVar to name mapping
-[main] Generated numbers: 45045 42792.4 48457.5 9490.87 14833.5 36596.7 12866.8 29734.4 40773.4 42480.5 36809.3 27425.5 37381.3 6360.02 46305 15890.2 32267 22724.4 15559.8 24596.4 37415.5 622.01 42885 42824.8 7606.92 15841.2 18671.7 28721.9 15176.9 37486.4 13918.4 10221.9
-GPGPU-Sim PTX: Setting up arguments for 8 bytes starting at 0x7ffd5b118858..
-GPGPU-Sim PTX: Setting up arguments for 4 bytes starting at 0x7ffd5b118854..
-GPGPU-Sim PTX: Setting up arguments for 8 bytes starting at 0x7ffd5b118848..
+[main] Generated numbers: 38999.2 3699.15 18227.8 22230 17433.7 37635.2 35217.4 24529 30398.4 6728.64 31391.7 17311.5 21005.6 15480.4 20658.7 19229 17205.2 44789.7 7129.11 34475.3 20279 34335 4771.78 43979.4 44409.4 45419.4 17191.8 27149.3 49901.8 31845.4 18754.5 38901
+GPGPU-Sim PTX: Setting up arguments for 8 bytes starting at 0x7ffde84933b8..
+GPGPU-Sim PTX: Setting up arguments for 4 bytes starting at 0x7ffde84933b4..
+GPGPU-Sim PTX: Setting up arguments for 8 bytes starting at 0x7ffde84933a8..
 
-GPGPU-Sim PTX: cudaLaunch for 0x0x55bd696e5ca2 (mode=performance simulation) on stream 0
+GPGPU-Sim PTX: cudaLaunch for 0x0x559a468f2ca2 (mode=performance simulation) on stream 0
 GPGPU-Sim PTX: finding reconvergence points for '_Z14cuda_reductionPdiS_'...
 GPGPU-Sim PTX: Finding dominators for '_Z14cuda_reductionPdiS_'...
 GPGPU-Sim PTX: Finding immediate dominators for '_Z14cuda_reductionPdiS_'...
@@ -412,14 +412,14 @@ GPGPU-Sim PTX: Finding postdominators for '_Z14cuda_reductionPdiS_'...
 GPGPU-Sim PTX: Finding immediate postdominators for '_Z14cuda_reductionPdiS_'...
 GPGPU-Sim PTX: pre-decoding instructions for '_Z14cuda_reductionPdiS_'...
 GPGPU-Sim PTX: reconvergence points for _Z14cuda_reductionPdiS_...
-GPGPU-Sim PTX:  1 (potential) branch divergence @  PC=0x0a8 (hw6-3.1.sm_61.ptx:50) @%p1 bra BB0_4;
-GPGPU-Sim PTX:    immediate post dominator      @  PC=0x180 (hw6-3.1.sm_61.ptx:84) setp.ne.s32%p4, %r1, 0;
-GPGPU-Sim PTX:  2 (potential) branch divergence @  PC=0x0b8 (hw6-3.1.sm_61.ptx:54) @%p2 bra BB0_3;
-GPGPU-Sim PTX:    immediate post dominator      @  PC=0x160 (hw6-3.1.sm_61.ptx:78) bar.sync 0;
-GPGPU-Sim PTX:  3 (potential) branch divergence @  PC=0x178 (hw6-3.1.sm_61.ptx:81) @%p3 bra BB0_1;
-GPGPU-Sim PTX:    immediate post dominator      @  PC=0x180 (hw6-3.1.sm_61.ptx:84) setp.ne.s32%p4, %r1, 0;
-GPGPU-Sim PTX:  4 (potential) branch divergence @  PC=0x188 (hw6-3.1.sm_61.ptx:85) @%p4 bra BB0_6;
-GPGPU-Sim PTX:    immediate post dominator      @  PC=0x1b0 (hw6-3.1.sm_61.ptx:93) ret;
+GPGPU-Sim PTX:  1 (potential) branch divergence @  PC=0x078 (hw6-3.1.sm_61.ptx:44) @%p1 bra BB0_4;
+GPGPU-Sim PTX:    immediate post dominator      @  PC=0x0e8 (hw6-3.1.sm_61.ptx:65) setp.ne.s32%p4, %r1, 0;
+GPGPU-Sim PTX:  2 (potential) branch divergence @  PC=0x088 (hw6-3.1.sm_61.ptx:48) @%p2 bra BB0_3;
+GPGPU-Sim PTX:    immediate post dominator      @  PC=0x0c8 (hw6-3.1.sm_61.ptx:59) bar.sync 0;
+GPGPU-Sim PTX:  3 (potential) branch divergence @  PC=0x0e0 (hw6-3.1.sm_61.ptx:62) @%p3 bra BB0_1;
+GPGPU-Sim PTX:    immediate post dominator      @  PC=0x0e8 (hw6-3.1.sm_61.ptx:65) setp.ne.s32%p4, %r1, 0;
+GPGPU-Sim PTX:  4 (potential) branch divergence @  PC=0x0f0 (hw6-3.1.sm_61.ptx:66) @%p4 bra BB0_6;
+GPGPU-Sim PTX:    immediate post dominator      @  PC=0x110 (hw6-3.1.sm_61.ptx:73) ret;
 GPGPU-Sim PTX: ... end of reconvergence points for _Z14cuda_reductionPdiS_
 GPGPU-Sim PTX: ... done pre-decoding instructions for '_Z14cuda_reductionPdiS_'.
 GPGPU-Sim PTX: pushing kernel '_Z14cuda_reductionPdiS_' to stream 0, gridDim= (1,1,1) blockDim = (32,1,1) 
@@ -429,25 +429,25 @@ Destroy streams for kernel 1: size 0
 kernel_name = _Z14cuda_reductionPdiS_ 
 kernel_launch_uid = 1 
 tol_mem_access_num = 11
-gpu_sim_cycle = 6338
-gpu_sim_insn = 2288
-gpu_ipc =       0.3610
-gpu_tot_sim_cycle = 6338
-gpu_tot_sim_insn = 2288
-gpu_tot_ipc =       0.3610
+gpu_sim_cycle = 5860
+gpu_sim_insn = 1692
+gpu_ipc =       0.2887
+gpu_tot_sim_cycle = 5860
+gpu_tot_sim_insn = 1692
+gpu_tot_ipc =       0.2887
 gpu_tot_issued_cta = 1
 gpu_occupancy = 1.5625% 
 gpu_tot_occupancy = 1.5625% 
 max_total_param_size = 0
 gpu_stall_dramfull = 0
 gpu_stall_icnt2sh    = 0
-partiton_level_parallism =       0.0014
-partiton_level_parallism_total  =       0.0014
+partiton_level_parallism =       0.0015
+partiton_level_parallism_total  =       0.0015
 partiton_level_parallism_util =       1.0000
 partiton_level_parallism_util_total  =       1.0000
-L2_BW  =       0.0644 GB/Sec
-L2_BW_total  =       0.0644 GB/Sec
-gpu_total_sim_rate=2288
+L2_BW  =       0.0696 GB/Sec
+L2_BW_total  =       0.0696 GB/Sec
+gpu_total_sim_rate=1692
 
 ========= Core cache stats =========
 L1I_cache:
@@ -574,10 +574,10 @@ ctas_completed 1, Shader 0 warp_id issue ditsribution:
 warp_id:
 0, 
 distro:
-160, 
-gpgpu_n_tot_thrd_icount = 2288
-gpgpu_n_tot_w_icount = 159
-gpgpu_n_stall_shd_mem = 7
+100, 
+gpgpu_n_tot_thrd_icount = 1692
+gpgpu_n_tot_w_icount = 87
+gpgpu_n_stall_shd_mem = 8
 gpgpu_n_mem_read_local = 0
 gpgpu_n_mem_write_local = 0
 gpgpu_n_mem_read_global = 8
@@ -586,7 +586,7 @@ gpgpu_n_mem_texture = 0
 gpgpu_n_mem_const = 0
 gpgpu_n_load_insn  = 32
 gpgpu_n_store_insn = 1
-gpgpu_n_shmem_insn = 252
+gpgpu_n_shmem_insn = 126
 gpgpu_n_sstarr_insn = 0
 gpgpu_n_tex_insn = 0
 gpgpu_n_const_mem_insn = 0
@@ -596,15 +596,15 @@ gpgpu_n_cache_bkconflict = 0
 gpgpu_n_intrawarp_mshr_merge = 0
 gpgpu_n_cmem_portconflict = 0
 gpgpu_stall_shd_mem[c_mem][resource_stall] = 0
-gpgpu_stall_shd_mem[s_mem][bk_conf] = 0
+gpgpu_stall_shd_mem[s_mem][bk_conf] = 1
 gpgpu_stall_shd_mem[gl_mem][resource_stall] = 0
 gpgpu_stall_shd_mem[gl_mem][coal_stall] = 7
 gpgpu_stall_shd_mem[gl_mem][data_port_stall] = 0
 gpu_reg_bank_conflict_stalls = 0
 Warp Occupancy Distribution:
-Stall:0	W0_Idle:4155	W0_Scoreboard:1035	W1:24	W2:20	W3:0	W4:20	W5:0	W6:0	W7:0	W8:20	W9:0	W10:0	W11:0	W12:0	W13:0	W14:0	W15:0	W16:20	W17:0	W18:0	W19:0	W20:0	W21:0	W22:0	W23:0	W24:0	W25:0	W26:0	W27:0	W28:0	W29:0	W30:0	W31:0	W32:55
-single_issue_nums: WS0:157	WS1:0	WS2:0	WS3:0	
-dual_issue_nums: WS0:1	WS1:0	WS2:0	WS3:0	
+Stall:0	W0_Idle:2717	W0_Scoreboard:645	W1:10	W2:7	W3:0	W4:7	W5:0	W6:0	W7:0	W8:7	W9:0	W10:0	W11:0	W12:0	W13:0	W14:0	W15:0	W16:7	W17:0	W18:0	W19:0	W20:0	W21:0	W22:0	W23:0	W24:0	W25:0	W26:0	W27:0	W28:0	W29:0	W30:0	W31:0	W32:49
+single_issue_nums: WS0:61	WS1:0	WS2:0	WS3:0	
+dual_issue_nums: WS0:13	WS1:0	WS2:0	WS3:0	
 traffic_breakdown_coretomem[GLOBAL_ACC_R] = 64 {8:8,}
 traffic_breakdown_coretomem[GLOBAL_ACC_W] = 40 {40:1,}
 traffic_breakdown_memtocore[GLOBAL_ACC_R] = 320 {40:8,}
@@ -725,17 +725,17 @@ dram[10]:     none      none      none      none      none      none      none  
 dram[11]:     none      none      none      none      none      none      none      none      none      none      none      none      none      none      none      none  
 maximum mf latency per bank:
 dram[0]:          0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
-dram[1]:        136         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
-dram[2]:          0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+dram[1]:          0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+dram[2]:        136         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
 dram[3]:          0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
 dram[4]:          0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
-dram[5]:          0       136         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+dram[5]:          0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
 dram[6]:          0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
 dram[7]:          0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
-dram[8]:        136         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+dram[8]:          0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
 dram[9]:          0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
-dram[10]:          0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
-dram[11]:          0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+dram[10]:          0       136         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+dram[11]:        136         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
 Memory Partition 0: 
 Cache L2_bank_000:
 MSHR contents
@@ -745,9 +745,9 @@ MSHR contents
 
 In Dram Latency Queue (total = 0): 
 DRAM[0]: 16 bks, busW=4 BL=8 CL=16, tRRD=8 tCCD=2, tRCD=16 tRAS=37 tRP=16 tRC=52
-n_cmd=11181 n_nop=11181 n_act=0 n_pre=0 n_ref_event=0 n_req=0 n_rd=0 n_rd_L2_A=0 n_write=0 n_wr_bk=0 bw_util=0
+n_cmd=10337 n_nop=10337 n_act=0 n_pre=0 n_ref_event=0 n_req=0 n_rd=0 n_rd_L2_A=0 n_write=0 n_wr_bk=0 bw_util=0
 n_activity=0 dram_eff=-nan
-bk0: 0a 11181i bk1: 0a 11181i bk2: 0a 11181i bk3: 0a 11181i bk4: 0a 11181i bk5: 0a 11181i bk6: 0a 11181i bk7: 0a 11181i bk8: 0a 11181i bk9: 0a 11181i bk10: 0a 11181i bk11: 0a 11181i bk12: 0a 11181i bk13: 0a 11181i bk14: 0a 11181i bk15: 0a 11181i 
+bk0: 0a 10337i bk1: 0a 10337i bk2: 0a 10337i bk3: 0a 10337i bk4: 0a 10337i bk5: 0a 10337i bk6: 0a 10337i bk7: 0a 10337i bk8: 0a 10337i bk9: 0a 10337i bk10: 0a 10337i bk11: 0a 10337i bk12: 0a 10337i bk13: 0a 10337i bk14: 0a 10337i bk15: 0a 10337i 
 
 ------------------------------------------------------------------------
 
@@ -762,11 +762,11 @@ GrpLevelPara = -nan
 
 BW Util details:
 bwutil = 0.000000 
-total_CMD = 11181 
+total_CMD = 10337 
 util_bw = 0 
 Wasted_Col = 0 
 Wasted_Row = 0 
-Idle = 11181 
+Idle = 10337 
 
 BW Util Bottlenecks: 
 RCDc_limit = 0 
@@ -780,8 +780,8 @@ WTRc_limit_alone = 0
 RTWc_limit_alone = 0 
 
 Commands details: 
-total_CMD = 11181 
-n_nop = 11181 
+total_CMD = 10337 
+n_nop = 10337 
 Read = 0 
 Write = 0 
 L2_Alloc = 0 
@@ -815,9 +815,9 @@ MSHR contents
 
 In Dram Latency Queue (total = 0): 
 DRAM[1]: 16 bks, busW=4 BL=8 CL=16, tRRD=8 tCCD=2, tRCD=16 tRAS=37 tRP=16 tRC=52
-n_cmd=11181 n_nop=11181 n_act=0 n_pre=0 n_ref_event=0 n_req=0 n_rd=0 n_rd_L2_A=0 n_write=0 n_wr_bk=0 bw_util=0
+n_cmd=10337 n_nop=10337 n_act=0 n_pre=0 n_ref_event=0 n_req=0 n_rd=0 n_rd_L2_A=0 n_write=0 n_wr_bk=0 bw_util=0
 n_activity=0 dram_eff=-nan
-bk0: 0a 11181i bk1: 0a 11181i bk2: 0a 11181i bk3: 0a 11181i bk4: 0a 11181i bk5: 0a 11181i bk6: 0a 11181i bk7: 0a 11181i bk8: 0a 11181i bk9: 0a 11181i bk10: 0a 11181i bk11: 0a 11181i bk12: 0a 11181i bk13: 0a 11181i bk14: 0a 11181i bk15: 0a 11181i 
+bk0: 0a 10337i bk1: 0a 10337i bk2: 0a 10337i bk3: 0a 10337i bk4: 0a 10337i bk5: 0a 10337i bk6: 0a 10337i bk7: 0a 10337i bk8: 0a 10337i bk9: 0a 10337i bk10: 0a 10337i bk11: 0a 10337i bk12: 0a 10337i bk13: 0a 10337i bk14: 0a 10337i bk15: 0a 10337i 
 
 ------------------------------------------------------------------------
 
@@ -832,11 +832,11 @@ GrpLevelPara = -nan
 
 BW Util details:
 bwutil = 0.000000 
-total_CMD = 11181 
+total_CMD = 10337 
 util_bw = 0 
 Wasted_Col = 0 
 Wasted_Row = 0 
-Idle = 11181 
+Idle = 10337 
 
 BW Util Bottlenecks: 
 RCDc_limit = 0 
@@ -850,8 +850,8 @@ WTRc_limit_alone = 0
 RTWc_limit_alone = 0 
 
 Commands details: 
-total_CMD = 11181 
-n_nop = 11181 
+total_CMD = 10337 
+n_nop = 10337 
 Read = 0 
 Write = 0 
 L2_Alloc = 0 
@@ -885,9 +885,9 @@ MSHR contents
 
 In Dram Latency Queue (total = 0): 
 DRAM[2]: 16 bks, busW=4 BL=8 CL=16, tRRD=8 tCCD=2, tRCD=16 tRAS=37 tRP=16 tRC=52
-n_cmd=11181 n_nop=11181 n_act=0 n_pre=0 n_ref_event=0 n_req=0 n_rd=0 n_rd_L2_A=0 n_write=0 n_wr_bk=0 bw_util=0
+n_cmd=10337 n_nop=10337 n_act=0 n_pre=0 n_ref_event=0 n_req=0 n_rd=0 n_rd_L2_A=0 n_write=0 n_wr_bk=0 bw_util=0
 n_activity=0 dram_eff=-nan
-bk0: 0a 11181i bk1: 0a 11181i bk2: 0a 11181i bk3: 0a 11181i bk4: 0a 11181i bk5: 0a 11181i bk6: 0a 11181i bk7: 0a 11181i bk8: 0a 11181i bk9: 0a 11181i bk10: 0a 11181i bk11: 0a 11181i bk12: 0a 11181i bk13: 0a 11181i bk14: 0a 11181i bk15: 0a 11181i 
+bk0: 0a 10337i bk1: 0a 10337i bk2: 0a 10337i bk3: 0a 10337i bk4: 0a 10337i bk5: 0a 10337i bk6: 0a 10337i bk7: 0a 10337i bk8: 0a 10337i bk9: 0a 10337i bk10: 0a 10337i bk11: 0a 10337i bk12: 0a 10337i bk13: 0a 10337i bk14: 0a 10337i bk15: 0a 10337i 
 
 ------------------------------------------------------------------------
 
@@ -902,11 +902,11 @@ GrpLevelPara = -nan
 
 BW Util details:
 bwutil = 0.000000 
-total_CMD = 11181 
+total_CMD = 10337 
 util_bw = 0 
 Wasted_Col = 0 
 Wasted_Row = 0 
-Idle = 11181 
+Idle = 10337 
 
 BW Util Bottlenecks: 
 RCDc_limit = 0 
@@ -920,8 +920,8 @@ WTRc_limit_alone = 0
 RTWc_limit_alone = 0 
 
 Commands details: 
-total_CMD = 11181 
-n_nop = 11181 
+total_CMD = 10337 
+n_nop = 10337 
 Read = 0 
 Write = 0 
 L2_Alloc = 0 
@@ -955,9 +955,9 @@ MSHR contents
 
 In Dram Latency Queue (total = 0): 
 DRAM[3]: 16 bks, busW=4 BL=8 CL=16, tRRD=8 tCCD=2, tRCD=16 tRAS=37 tRP=16 tRC=52
-n_cmd=11181 n_nop=11181 n_act=0 n_pre=0 n_ref_event=0 n_req=0 n_rd=0 n_rd_L2_A=0 n_write=0 n_wr_bk=0 bw_util=0
+n_cmd=10337 n_nop=10337 n_act=0 n_pre=0 n_ref_event=0 n_req=0 n_rd=0 n_rd_L2_A=0 n_write=0 n_wr_bk=0 bw_util=0
 n_activity=0 dram_eff=-nan
-bk0: 0a 11181i bk1: 0a 11181i bk2: 0a 11181i bk3: 0a 11181i bk4: 0a 11181i bk5: 0a 11181i bk6: 0a 11181i bk7: 0a 11181i bk8: 0a 11181i bk9: 0a 11181i bk10: 0a 11181i bk11: 0a 11181i bk12: 0a 11181i bk13: 0a 11181i bk14: 0a 11181i bk15: 0a 11181i 
+bk0: 0a 10337i bk1: 0a 10337i bk2: 0a 10337i bk3: 0a 10337i bk4: 0a 10337i bk5: 0a 10337i bk6: 0a 10337i bk7: 0a 10337i bk8: 0a 10337i bk9: 0a 10337i bk10: 0a 10337i bk11: 0a 10337i bk12: 0a 10337i bk13: 0a 10337i bk14: 0a 10337i bk15: 0a 10337i 
 
 ------------------------------------------------------------------------
 
@@ -972,11 +972,11 @@ GrpLevelPara = -nan
 
 BW Util details:
 bwutil = 0.000000 
-total_CMD = 11181 
+total_CMD = 10337 
 util_bw = 0 
 Wasted_Col = 0 
 Wasted_Row = 0 
-Idle = 11181 
+Idle = 10337 
 
 BW Util Bottlenecks: 
 RCDc_limit = 0 
@@ -990,8 +990,8 @@ WTRc_limit_alone = 0
 RTWc_limit_alone = 0 
 
 Commands details: 
-total_CMD = 11181 
-n_nop = 11181 
+total_CMD = 10337 
+n_nop = 10337 
 Read = 0 
 Write = 0 
 L2_Alloc = 0 
@@ -1025,9 +1025,9 @@ MSHR contents
 
 In Dram Latency Queue (total = 0): 
 DRAM[4]: 16 bks, busW=4 BL=8 CL=16, tRRD=8 tCCD=2, tRCD=16 tRAS=37 tRP=16 tRC=52
-n_cmd=11181 n_nop=11181 n_act=0 n_pre=0 n_ref_event=0 n_req=0 n_rd=0 n_rd_L2_A=0 n_write=0 n_wr_bk=0 bw_util=0
+n_cmd=10337 n_nop=10337 n_act=0 n_pre=0 n_ref_event=0 n_req=0 n_rd=0 n_rd_L2_A=0 n_write=0 n_wr_bk=0 bw_util=0
 n_activity=0 dram_eff=-nan
-bk0: 0a 11181i bk1: 0a 11181i bk2: 0a 11181i bk3: 0a 11181i bk4: 0a 11181i bk5: 0a 11181i bk6: 0a 11181i bk7: 0a 11181i bk8: 0a 11181i bk9: 0a 11181i bk10: 0a 11181i bk11: 0a 11181i bk12: 0a 11181i bk13: 0a 11181i bk14: 0a 11181i bk15: 0a 11181i 
+bk0: 0a 10337i bk1: 0a 10337i bk2: 0a 10337i bk3: 0a 10337i bk4: 0a 10337i bk5: 0a 10337i bk6: 0a 10337i bk7: 0a 10337i bk8: 0a 10337i bk9: 0a 10337i bk10: 0a 10337i bk11: 0a 10337i bk12: 0a 10337i bk13: 0a 10337i bk14: 0a 10337i bk15: 0a 10337i 
 
 ------------------------------------------------------------------------
 
@@ -1042,11 +1042,11 @@ GrpLevelPara = -nan
 
 BW Util details:
 bwutil = 0.000000 
-total_CMD = 11181 
+total_CMD = 10337 
 util_bw = 0 
 Wasted_Col = 0 
 Wasted_Row = 0 
-Idle = 11181 
+Idle = 10337 
 
 BW Util Bottlenecks: 
 RCDc_limit = 0 
@@ -1060,8 +1060,8 @@ WTRc_limit_alone = 0
 RTWc_limit_alone = 0 
 
 Commands details: 
-total_CMD = 11181 
-n_nop = 11181 
+total_CMD = 10337 
+n_nop = 10337 
 Read = 0 
 Write = 0 
 L2_Alloc = 0 
@@ -1095,9 +1095,9 @@ MSHR contents
 
 In Dram Latency Queue (total = 0): 
 DRAM[5]: 16 bks, busW=4 BL=8 CL=16, tRRD=8 tCCD=2, tRCD=16 tRAS=37 tRP=16 tRC=52
-n_cmd=11181 n_nop=11181 n_act=0 n_pre=0 n_ref_event=0 n_req=0 n_rd=0 n_rd_L2_A=0 n_write=0 n_wr_bk=0 bw_util=0
+n_cmd=10337 n_nop=10337 n_act=0 n_pre=0 n_ref_event=0 n_req=0 n_rd=0 n_rd_L2_A=0 n_write=0 n_wr_bk=0 bw_util=0
 n_activity=0 dram_eff=-nan
-bk0: 0a 11181i bk1: 0a 11181i bk2: 0a 11181i bk3: 0a 11181i bk4: 0a 11181i bk5: 0a 11181i bk6: 0a 11181i bk7: 0a 11181i bk8: 0a 11181i bk9: 0a 11181i bk10: 0a 11181i bk11: 0a 11181i bk12: 0a 11181i bk13: 0a 11181i bk14: 0a 11181i bk15: 0a 11181i 
+bk0: 0a 10337i bk1: 0a 10337i bk2: 0a 10337i bk3: 0a 10337i bk4: 0a 10337i bk5: 0a 10337i bk6: 0a 10337i bk7: 0a 10337i bk8: 0a 10337i bk9: 0a 10337i bk10: 0a 10337i bk11: 0a 10337i bk12: 0a 10337i bk13: 0a 10337i bk14: 0a 10337i bk15: 0a 10337i 
 
 ------------------------------------------------------------------------
 
@@ -1112,11 +1112,11 @@ GrpLevelPara = -nan
 
 BW Util details:
 bwutil = 0.000000 
-total_CMD = 11181 
+total_CMD = 10337 
 util_bw = 0 
 Wasted_Col = 0 
 Wasted_Row = 0 
-Idle = 11181 
+Idle = 10337 
 
 BW Util Bottlenecks: 
 RCDc_limit = 0 
@@ -1130,8 +1130,8 @@ WTRc_limit_alone = 0
 RTWc_limit_alone = 0 
 
 Commands details: 
-total_CMD = 11181 
-n_nop = 11181 
+total_CMD = 10337 
+n_nop = 10337 
 Read = 0 
 Write = 0 
 L2_Alloc = 0 
@@ -1165,9 +1165,9 @@ MSHR contents
 
 In Dram Latency Queue (total = 0): 
 DRAM[6]: 16 bks, busW=4 BL=8 CL=16, tRRD=8 tCCD=2, tRCD=16 tRAS=37 tRP=16 tRC=52
-n_cmd=11181 n_nop=11181 n_act=0 n_pre=0 n_ref_event=0 n_req=0 n_rd=0 n_rd_L2_A=0 n_write=0 n_wr_bk=0 bw_util=0
+n_cmd=10337 n_nop=10337 n_act=0 n_pre=0 n_ref_event=0 n_req=0 n_rd=0 n_rd_L2_A=0 n_write=0 n_wr_bk=0 bw_util=0
 n_activity=0 dram_eff=-nan
-bk0: 0a 11181i bk1: 0a 11181i bk2: 0a 11181i bk3: 0a 11181i bk4: 0a 11181i bk5: 0a 11181i bk6: 0a 11181i bk7: 0a 11181i bk8: 0a 11181i bk9: 0a 11181i bk10: 0a 11181i bk11: 0a 11181i bk12: 0a 11181i bk13: 0a 11181i bk14: 0a 11181i bk15: 0a 11181i 
+bk0: 0a 10337i bk1: 0a 10337i bk2: 0a 10337i bk3: 0a 10337i bk4: 0a 10337i bk5: 0a 10337i bk6: 0a 10337i bk7: 0a 10337i bk8: 0a 10337i bk9: 0a 10337i bk10: 0a 10337i bk11: 0a 10337i bk12: 0a 10337i bk13: 0a 10337i bk14: 0a 10337i bk15: 0a 10337i 
 
 ------------------------------------------------------------------------
 
@@ -1182,11 +1182,11 @@ GrpLevelPara = -nan
 
 BW Util details:
 bwutil = 0.000000 
-total_CMD = 11181 
+total_CMD = 10337 
 util_bw = 0 
 Wasted_Col = 0 
 Wasted_Row = 0 
-Idle = 11181 
+Idle = 10337 
 
 BW Util Bottlenecks: 
 RCDc_limit = 0 
@@ -1200,8 +1200,8 @@ WTRc_limit_alone = 0
 RTWc_limit_alone = 0 
 
 Commands details: 
-total_CMD = 11181 
-n_nop = 11181 
+total_CMD = 10337 
+n_nop = 10337 
 Read = 0 
 Write = 0 
 L2_Alloc = 0 
@@ -1235,9 +1235,9 @@ MSHR contents
 
 In Dram Latency Queue (total = 0): 
 DRAM[7]: 16 bks, busW=4 BL=8 CL=16, tRRD=8 tCCD=2, tRCD=16 tRAS=37 tRP=16 tRC=52
-n_cmd=11181 n_nop=11181 n_act=0 n_pre=0 n_ref_event=0 n_req=0 n_rd=0 n_rd_L2_A=0 n_write=0 n_wr_bk=0 bw_util=0
+n_cmd=10337 n_nop=10337 n_act=0 n_pre=0 n_ref_event=0 n_req=0 n_rd=0 n_rd_L2_A=0 n_write=0 n_wr_bk=0 bw_util=0
 n_activity=0 dram_eff=-nan
-bk0: 0a 11181i bk1: 0a 11181i bk2: 0a 11181i bk3: 0a 11181i bk4: 0a 11181i bk5: 0a 11181i bk6: 0a 11181i bk7: 0a 11181i bk8: 0a 11181i bk9: 0a 11181i bk10: 0a 11181i bk11: 0a 11181i bk12: 0a 11181i bk13: 0a 11181i bk14: 0a 11181i bk15: 0a 11181i 
+bk0: 0a 10337i bk1: 0a 10337i bk2: 0a 10337i bk3: 0a 10337i bk4: 0a 10337i bk5: 0a 10337i bk6: 0a 10337i bk7: 0a 10337i bk8: 0a 10337i bk9: 0a 10337i bk10: 0a 10337i bk11: 0a 10337i bk12: 0a 10337i bk13: 0a 10337i bk14: 0a 10337i bk15: 0a 10337i 
 
 ------------------------------------------------------------------------
 
@@ -1252,11 +1252,11 @@ GrpLevelPara = -nan
 
 BW Util details:
 bwutil = 0.000000 
-total_CMD = 11181 
+total_CMD = 10337 
 util_bw = 0 
 Wasted_Col = 0 
 Wasted_Row = 0 
-Idle = 11181 
+Idle = 10337 
 
 BW Util Bottlenecks: 
 RCDc_limit = 0 
@@ -1270,8 +1270,8 @@ WTRc_limit_alone = 0
 RTWc_limit_alone = 0 
 
 Commands details: 
-total_CMD = 11181 
-n_nop = 11181 
+total_CMD = 10337 
+n_nop = 10337 
 Read = 0 
 Write = 0 
 L2_Alloc = 0 
@@ -1305,9 +1305,9 @@ MSHR contents
 
 In Dram Latency Queue (total = 0): 
 DRAM[8]: 16 bks, busW=4 BL=8 CL=16, tRRD=8 tCCD=2, tRCD=16 tRAS=37 tRP=16 tRC=52
-n_cmd=11181 n_nop=11181 n_act=0 n_pre=0 n_ref_event=0 n_req=0 n_rd=0 n_rd_L2_A=0 n_write=0 n_wr_bk=0 bw_util=0
+n_cmd=10337 n_nop=10337 n_act=0 n_pre=0 n_ref_event=0 n_req=0 n_rd=0 n_rd_L2_A=0 n_write=0 n_wr_bk=0 bw_util=0
 n_activity=0 dram_eff=-nan
-bk0: 0a 11181i bk1: 0a 11181i bk2: 0a 11181i bk3: 0a 11181i bk4: 0a 11181i bk5: 0a 11181i bk6: 0a 11181i bk7: 0a 11181i bk8: 0a 11181i bk9: 0a 11181i bk10: 0a 11181i bk11: 0a 11181i bk12: 0a 11181i bk13: 0a 11181i bk14: 0a 11181i bk15: 0a 11181i 
+bk0: 0a 10337i bk1: 0a 10337i bk2: 0a 10337i bk3: 0a 10337i bk4: 0a 10337i bk5: 0a 10337i bk6: 0a 10337i bk7: 0a 10337i bk8: 0a 10337i bk9: 0a 10337i bk10: 0a 10337i bk11: 0a 10337i bk12: 0a 10337i bk13: 0a 10337i bk14: 0a 10337i bk15: 0a 10337i 
 
 ------------------------------------------------------------------------
 
@@ -1322,11 +1322,11 @@ GrpLevelPara = -nan
 
 BW Util details:
 bwutil = 0.000000 
-total_CMD = 11181 
+total_CMD = 10337 
 util_bw = 0 
 Wasted_Col = 0 
 Wasted_Row = 0 
-Idle = 11181 
+Idle = 10337 
 
 BW Util Bottlenecks: 
 RCDc_limit = 0 
@@ -1340,8 +1340,8 @@ WTRc_limit_alone = 0
 RTWc_limit_alone = 0 
 
 Commands details: 
-total_CMD = 11181 
-n_nop = 11181 
+total_CMD = 10337 
+n_nop = 10337 
 Read = 0 
 Write = 0 
 L2_Alloc = 0 
@@ -1375,9 +1375,9 @@ MSHR contents
 
 In Dram Latency Queue (total = 0): 
 DRAM[9]: 16 bks, busW=4 BL=8 CL=16, tRRD=8 tCCD=2, tRCD=16 tRAS=37 tRP=16 tRC=52
-n_cmd=11181 n_nop=11181 n_act=0 n_pre=0 n_ref_event=0 n_req=0 n_rd=0 n_rd_L2_A=0 n_write=0 n_wr_bk=0 bw_util=0
+n_cmd=10337 n_nop=10337 n_act=0 n_pre=0 n_ref_event=0 n_req=0 n_rd=0 n_rd_L2_A=0 n_write=0 n_wr_bk=0 bw_util=0
 n_activity=0 dram_eff=-nan
-bk0: 0a 11181i bk1: 0a 11181i bk2: 0a 11181i bk3: 0a 11181i bk4: 0a 11181i bk5: 0a 11181i bk6: 0a 11181i bk7: 0a 11181i bk8: 0a 11181i bk9: 0a 11181i bk10: 0a 11181i bk11: 0a 11181i bk12: 0a 11181i bk13: 0a 11181i bk14: 0a 11181i bk15: 0a 11181i 
+bk0: 0a 10337i bk1: 0a 10337i bk2: 0a 10337i bk3: 0a 10337i bk4: 0a 10337i bk5: 0a 10337i bk6: 0a 10337i bk7: 0a 10337i bk8: 0a 10337i bk9: 0a 10337i bk10: 0a 10337i bk11: 0a 10337i bk12: 0a 10337i bk13: 0a 10337i bk14: 0a 10337i bk15: 0a 10337i 
 
 ------------------------------------------------------------------------
 
@@ -1392,11 +1392,11 @@ GrpLevelPara = -nan
 
 BW Util details:
 bwutil = 0.000000 
-total_CMD = 11181 
+total_CMD = 10337 
 util_bw = 0 
 Wasted_Col = 0 
 Wasted_Row = 0 
-Idle = 11181 
+Idle = 10337 
 
 BW Util Bottlenecks: 
 RCDc_limit = 0 
@@ -1410,8 +1410,8 @@ WTRc_limit_alone = 0
 RTWc_limit_alone = 0 
 
 Commands details: 
-total_CMD = 11181 
-n_nop = 11181 
+total_CMD = 10337 
+n_nop = 10337 
 Read = 0 
 Write = 0 
 L2_Alloc = 0 
@@ -1445,9 +1445,9 @@ MSHR contents
 
 In Dram Latency Queue (total = 0): 
 DRAM[10]: 16 bks, busW=4 BL=8 CL=16, tRRD=8 tCCD=2, tRCD=16 tRAS=37 tRP=16 tRC=52
-n_cmd=11181 n_nop=11181 n_act=0 n_pre=0 n_ref_event=0 n_req=0 n_rd=0 n_rd_L2_A=0 n_write=0 n_wr_bk=0 bw_util=0
+n_cmd=10337 n_nop=10337 n_act=0 n_pre=0 n_ref_event=0 n_req=0 n_rd=0 n_rd_L2_A=0 n_write=0 n_wr_bk=0 bw_util=0
 n_activity=0 dram_eff=-nan
-bk0: 0a 11181i bk1: 0a 11181i bk2: 0a 11181i bk3: 0a 11181i bk4: 0a 11181i bk5: 0a 11181i bk6: 0a 11181i bk7: 0a 11181i bk8: 0a 11181i bk9: 0a 11181i bk10: 0a 11181i bk11: 0a 11181i bk12: 0a 11181i bk13: 0a 11181i bk14: 0a 11181i bk15: 0a 11181i 
+bk0: 0a 10337i bk1: 0a 10337i bk2: 0a 10337i bk3: 0a 10337i bk4: 0a 10337i bk5: 0a 10337i bk6: 0a 10337i bk7: 0a 10337i bk8: 0a 10337i bk9: 0a 10337i bk10: 0a 10337i bk11: 0a 10337i bk12: 0a 10337i bk13: 0a 10337i bk14: 0a 10337i bk15: 0a 10337i 
 
 ------------------------------------------------------------------------
 
@@ -1462,11 +1462,11 @@ GrpLevelPara = -nan
 
 BW Util details:
 bwutil = 0.000000 
-total_CMD = 11181 
+total_CMD = 10337 
 util_bw = 0 
 Wasted_Col = 0 
 Wasted_Row = 0 
-Idle = 11181 
+Idle = 10337 
 
 BW Util Bottlenecks: 
 RCDc_limit = 0 
@@ -1480,8 +1480,8 @@ WTRc_limit_alone = 0
 RTWc_limit_alone = 0 
 
 Commands details: 
-total_CMD = 11181 
-n_nop = 11181 
+total_CMD = 10337 
+n_nop = 10337 
 Read = 0 
 Write = 0 
 L2_Alloc = 0 
@@ -1515,9 +1515,9 @@ MSHR contents
 
 In Dram Latency Queue (total = 0): 
 DRAM[11]: 16 bks, busW=4 BL=8 CL=16, tRRD=8 tCCD=2, tRCD=16 tRAS=37 tRP=16 tRC=52
-n_cmd=11181 n_nop=11181 n_act=0 n_pre=0 n_ref_event=0 n_req=0 n_rd=0 n_rd_L2_A=0 n_write=0 n_wr_bk=0 bw_util=0
+n_cmd=10337 n_nop=10337 n_act=0 n_pre=0 n_ref_event=0 n_req=0 n_rd=0 n_rd_L2_A=0 n_write=0 n_wr_bk=0 bw_util=0
 n_activity=0 dram_eff=-nan
-bk0: 0a 11181i bk1: 0a 11181i bk2: 0a 11181i bk3: 0a 11181i bk4: 0a 11181i bk5: 0a 11181i bk6: 0a 11181i bk7: 0a 11181i bk8: 0a 11181i bk9: 0a 11181i bk10: 0a 11181i bk11: 0a 11181i bk12: 0a 11181i bk13: 0a 11181i bk14: 0a 11181i bk15: 0a 11181i 
+bk0: 0a 10337i bk1: 0a 10337i bk2: 0a 10337i bk3: 0a 10337i bk4: 0a 10337i bk5: 0a 10337i bk6: 0a 10337i bk7: 0a 10337i bk8: 0a 10337i bk9: 0a 10337i bk10: 0a 10337i bk11: 0a 10337i bk12: 0a 10337i bk13: 0a 10337i bk14: 0a 10337i bk15: 0a 10337i 
 
 ------------------------------------------------------------------------
 
@@ -1532,11 +1532,11 @@ GrpLevelPara = -nan
 
 BW Util details:
 bwutil = 0.000000 
-total_CMD = 11181 
+total_CMD = 10337 
 util_bw = 0 
 Wasted_Col = 0 
 Wasted_Row = 0 
-Idle = 11181 
+Idle = 10337 
 
 BW Util Bottlenecks: 
 RCDc_limit = 0 
@@ -1550,8 +1550,8 @@ WTRc_limit_alone = 0
 RTWc_limit_alone = 0 
 
 Commands details: 
-total_CMD = 11181 
-n_nop = 11181 
+total_CMD = 10337 
+n_nop = 10337 
 Read = 0 
 Write = 0 
 L2_Alloc = 0 
@@ -1581,27 +1581,27 @@ mrqq: max=0 avg=0
 L2_cache_bank[0]: Access = 0, Miss = 0, Miss_rate = -nan, Pending_hits = 0, Reservation_fails = 0
 L2_cache_bank[1]: Access = 0, Miss = 0, Miss_rate = -nan, Pending_hits = 0, Reservation_fails = 0
 L2_cache_bank[2]: Access = 0, Miss = 0, Miss_rate = -nan, Pending_hits = 0, Reservation_fails = 0
-L2_cache_bank[3]: Access = 1, Miss = 1, Miss_rate = 1.000, Pending_hits = 0, Reservation_fails = 0
+L2_cache_bank[3]: Access = 0, Miss = 0, Miss_rate = -nan, Pending_hits = 0, Reservation_fails = 0
 L2_cache_bank[4]: Access = 0, Miss = 0, Miss_rate = -nan, Pending_hits = 0, Reservation_fails = 0
-L2_cache_bank[5]: Access = 0, Miss = 0, Miss_rate = -nan, Pending_hits = 0, Reservation_fails = 0
+L2_cache_bank[5]: Access = 4, Miss = 0, Miss_rate = 0.000, Pending_hits = 0, Reservation_fails = 0
 L2_cache_bank[6]: Access = 0, Miss = 0, Miss_rate = -nan, Pending_hits = 0, Reservation_fails = 0
 L2_cache_bank[7]: Access = 0, Miss = 0, Miss_rate = -nan, Pending_hits = 0, Reservation_fails = 0
 L2_cache_bank[8]: Access = 0, Miss = 0, Miss_rate = -nan, Pending_hits = 0, Reservation_fails = 0
 L2_cache_bank[9]: Access = 0, Miss = 0, Miss_rate = -nan, Pending_hits = 0, Reservation_fails = 0
-L2_cache_bank[10]: Access = 4, Miss = 0, Miss_rate = 0.000, Pending_hits = 0, Reservation_fails = 0
+L2_cache_bank[10]: Access = 0, Miss = 0, Miss_rate = -nan, Pending_hits = 0, Reservation_fails = 0
 L2_cache_bank[11]: Access = 0, Miss = 0, Miss_rate = -nan, Pending_hits = 0, Reservation_fails = 0
 L2_cache_bank[12]: Access = 0, Miss = 0, Miss_rate = -nan, Pending_hits = 0, Reservation_fails = 0
 L2_cache_bank[13]: Access = 0, Miss = 0, Miss_rate = -nan, Pending_hits = 0, Reservation_fails = 0
 L2_cache_bank[14]: Access = 0, Miss = 0, Miss_rate = -nan, Pending_hits = 0, Reservation_fails = 0
 L2_cache_bank[15]: Access = 0, Miss = 0, Miss_rate = -nan, Pending_hits = 0, Reservation_fails = 0
-L2_cache_bank[16]: Access = 4, Miss = 0, Miss_rate = 0.000, Pending_hits = 0, Reservation_fails = 0
+L2_cache_bank[16]: Access = 0, Miss = 0, Miss_rate = -nan, Pending_hits = 0, Reservation_fails = 0
 L2_cache_bank[17]: Access = 0, Miss = 0, Miss_rate = -nan, Pending_hits = 0, Reservation_fails = 0
 L2_cache_bank[18]: Access = 0, Miss = 0, Miss_rate = -nan, Pending_hits = 0, Reservation_fails = 0
 L2_cache_bank[19]: Access = 0, Miss = 0, Miss_rate = -nan, Pending_hits = 0, Reservation_fails = 0
 L2_cache_bank[20]: Access = 0, Miss = 0, Miss_rate = -nan, Pending_hits = 0, Reservation_fails = 0
-L2_cache_bank[21]: Access = 0, Miss = 0, Miss_rate = -nan, Pending_hits = 0, Reservation_fails = 0
+L2_cache_bank[21]: Access = 4, Miss = 0, Miss_rate = 0.000, Pending_hits = 0, Reservation_fails = 0
 L2_cache_bank[22]: Access = 0, Miss = 0, Miss_rate = -nan, Pending_hits = 0, Reservation_fails = 0
-L2_cache_bank[23]: Access = 0, Miss = 0, Miss_rate = -nan, Pending_hits = 0, Reservation_fails = 0
+L2_cache_bank[23]: Access = 1, Miss = 1, Miss_rate = 1.000, Pending_hits = 0, Reservation_fails = 0
 L2_total_cache_accesses = 9
 L2_total_cache_misses = 1
 L2_total_cache_miss_rate = 0.1111
@@ -1700,18 +1700,18 @@ Slowest flit = 0
 Fragmentation average = 0
 	minimum = 0
 	maximum = 0
-Injected packet rate average = 5.46156e-05
+Injected packet rate average = 5.90706e-05
 	minimum = 0 (at node 1)
-	maximum = 0.00142001 (at node 0)
-Accepted packet rate average = 5.46156e-05
+	maximum = 0.00153584 (at node 0)
+Accepted packet rate average = 5.90706e-05
 	minimum = 0 (at node 1)
-	maximum = 0.00142001 (at node 0)
-Injected flit rate average = 5.46156e-05
+	maximum = 0.00153584 (at node 0)
+Injected flit rate average = 5.90706e-05
 	minimum = 0 (at node 1)
-	maximum = 0.00142001 (at node 0)
-Accepted flit rate average= 5.46156e-05
+	maximum = 0.00153584 (at node 0)
+Accepted flit rate average= 5.90706e-05
 	minimum = 0 (at node 1)
-	maximum = 0.00142001 (at node 0)
+	maximum = 0.00153584 (at node 0)
 Injected packet length average = 1
 Accepted packet length average = 1
 Total in-flight flits = 0 (0 measured)
@@ -1729,18 +1729,18 @@ Flit latency average = 5 (1 samples)
 Fragmentation average = 0 (1 samples)
 	minimum = 0 (1 samples)
 	maximum = 0 (1 samples)
-Injected packet rate average = 5.46156e-05 (1 samples)
+Injected packet rate average = 5.90706e-05 (1 samples)
 	minimum = 0 (1 samples)
-	maximum = 0.00142001 (1 samples)
-Accepted packet rate average = 5.46156e-05 (1 samples)
+	maximum = 0.00153584 (1 samples)
+Accepted packet rate average = 5.90706e-05 (1 samples)
 	minimum = 0 (1 samples)
-	maximum = 0.00142001 (1 samples)
-Injected flit rate average = 5.46156e-05 (1 samples)
+	maximum = 0.00153584 (1 samples)
+Injected flit rate average = 5.90706e-05 (1 samples)
 	minimum = 0 (1 samples)
-	maximum = 0.00142001 (1 samples)
-Accepted flit rate average = 5.46156e-05 (1 samples)
+	maximum = 0.00153584 (1 samples)
+Accepted flit rate average = 5.90706e-05 (1 samples)
 	minimum = 0 (1 samples)
-	maximum = 0.00142001 (1 samples)
+	maximum = 0.00153584 (1 samples)
 Injected packet size average = 1 (1 samples)
 Accepted packet size average = 1 (1 samples)
 Hops average = 1 (1 samples)
@@ -1748,12 +1748,12 @@ Hops average = 1 (1 samples)
 
 
 gpgpu_simulation_time = 0 days, 0 hrs, 0 min, 1 sec (1 sec)
-gpgpu_simulation_rate = 2288 (inst/sec)
-gpgpu_simulation_rate = 6338 (cycle/sec)
-gpgpu_silicon_slowdown = 223572x
+gpgpu_simulation_rate = 1692 (inst/sec)
+gpgpu_simulation_rate = 5860 (cycle/sec)
+gpgpu_silicon_slowdown = 241808x
 GPGPU-Sim: synchronize waiting for inactive GPU simulation
 GPGPU-Sim API: Stream Manager State
 GPGPU-Sim: detected inactive GPU simulation thread
-[main] (cuda) The minimum value: 622.01
-[main] (cpu) The minimum value: 622.01
+[main] (cuda) The minimum value: 3699.15
+[main] (cpu) The minimum value: 3699.15
 GPGPU-Sim: *** exit detected ***

@@ -20,8 +20,10 @@ nvcc ${RunFile}.cu -o ${RunFile}.exe \
 
 # ldd ${RunFile}.exe # print out a list of dll
 
+
 ./${RunFile}.exe > ${RunFile}-sim.log
-code ${RunFile}-sim.log
+python3 extract_stat.py ${RunFile}-sim.log ${RunFile}-sim.stat
+code ${RunFile}-sim.stat
 
 
 
