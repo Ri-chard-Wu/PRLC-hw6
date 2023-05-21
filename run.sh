@@ -1,10 +1,10 @@
 cd ~/hw6
 export CUDA_VISIBLE_DEVICES=0
 
-# export CUDA_INSTALL_PATH=/opt/cuda
-# source ~/gpgpu-sim_distribution/setup_environment
+export CUDA_INSTALL_PATH=/opt/cuda
+source ~/gpgpu-sim_distribution/setup_environment
 
-RunFile=./hw6-3
+RunFile=./hw6-1
 
 
 rm *.exe
@@ -16,7 +16,7 @@ rm -r checkpoint_files
 
 nvcc ${RunFile}.cu -o ${RunFile}.exe \
                    -gencode arch=compute_61,code=compute_61 \
-                #    -lcudart
+                   -lcudart
 
 # ldd ${RunFile}.exe # print out a list of dll
 
@@ -26,7 +26,7 @@ code gpgpu-sim.log
 
 
 
-echo "--------------------------"
-echo "$ ls -al"
-echo ""
-ls -al
+# echo "--------------------------"
+# echo "$ ls -al"
+# echo ""
+# ls -al

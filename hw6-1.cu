@@ -40,63 +40,73 @@ typedef unsigned long long int ull_t;
 
 
 
-
-__device__ void sleep_cycles(clock_t clock_count)
+__device__ double atomicAdd_double(double* address, double val)
 {
-    clock_t start_clock = clock();
-    clock_t clock_offset = 0;
-    while (clock_offset < clock_count)
-    {
-        clock_offset = clock() - start_clock;
-    }
+    unsigned long long int* address_as_ull = (unsigned long long int*)address;
+    unsigned long long int old_value = *address_as_ull, assumed;
+
+    do {
+        assumed = old_value;
+        old_value = atomicCAS(address_as_ull, assumed,
+                 __double_as_longlong(val + __longlong_as_double(assumed)));
+
+    // Note: uses integer comparison to avoid hang in case of NaN (since NaN != NaN)
+    } while (assumed != old_value);
+
+    return __longlong_as_double(old_value);
 }
 
 
-__device__ void mutex_lock(unsigned int *mutex) {
-    unsigned int ns = 8;
-    while (atomicCAS(mutex, 0, 1) == 1) {
-        sleep_cycles(ns);
-        if (ns < 256) {
-            ns *= 2;
+
+__device__ double atomicMin_double(double* address, double val)
+{
+    ull_t* address_as_ull = (unsigned long long int*)address;
+    ull_t assumed, new_value;
+    ull_t old_value = *address_as_ull;
+
+    do {
+        assumed = old_value;
+
+        if(val < __longlong_as_double(old_value)){
+            new_value = __double_as_longlong(val);
         }
-    }
+        else{
+            new_value = old_value;
+        }
+
+        old_value = atomicCAS(address_as_ull, assumed, new_value);
+    
+    // val < __longlong_as_double(assumed) ? val : __longlong_as_double(assumed)
+
+    // Note: uses integer comparison to avoid hang in case of NaN (since NaN != NaN)
+    } while (assumed != old_value);
+
+    return __longlong_as_double(old_value);
 }
 
 
-__device__ void mutex_unlock(unsigned int *mutex) {
-    atomicExch(mutex, 0);
-}
 
-
-
-__global__ void cuda_reduction(ull_t *arr, int n, ull_t *ret) {
+__global__ void cuda_reduction(double *arr, int n, double *ret) {
    
     unsigned int tid = threadIdx.x;
 
-    ull_t item_local = arr[tid];
-    __shared__ unsigned int mutex[1];
-    mutex[0] = 0;
+    double item_local = arr[tid];
 
-    __syncthreads();
-
-    mutex_lock(mutex);
-
-    if(*ret > item_local){
-        *ret = item_local;
-    }
-
-    mutex_unlock(mutex);
+    atomicMin_double(ret, item_local);
 }
+
+
 
 
 
 
 int main() {
 
-    ull_t *ret_ull = new ull_t;
-    double *ret_double = new double;
+    srand(time(0));
+
+
+    double *ret = new double;
     double *arr = new double[N];
-    ull_t *arr_ull = new ull_t[N];
     
     generate_random_doubles(arr, N);
 
@@ -107,37 +117,24 @@ int main() {
     std::cout << '\n';
 
 
-    ull_t mask = ((ull_t)1) << 63; 
-
-    memcpy(arr_ull, arr, N * sizeof(ull_t));
-
-    for(int i = 0;i < N; i++){
-        arr_ull[i] ^= mask;
-    }
-
-
-    ull_t *ret_ull_dev;
-    ull_t *arr_ull_dev;
-    cudaMalloc(&arr_ull_dev, N * sizeof(ull_t));
-    cudaMalloc(&ret_ull_dev, 1 * sizeof(ull_t));
-    cudaMemcpy((BYTE *)arr_ull_dev, (BYTE *)arr_ull, N * sizeof(ull_t), cudaMemcpyHostToDevice);
-    cudaMemcpy((BYTE *)ret_ull_dev, (BYTE *)arr_ull, 1 * sizeof(ull_t), cudaMemcpyHostToDevice);
+    double *ret_dev;
+    double *arr_dev;
+    cudaMalloc(&arr_dev, N * sizeof(double));
+    cudaMalloc(&ret_dev, 1 * sizeof(double));
+    cudaMemcpy((BYTE *)arr_dev, (BYTE *)arr, N * sizeof(double), cudaMemcpyHostToDevice);
+    cudaMemcpy((BYTE *)ret_dev, (BYTE *)arr, 1 * sizeof(double), cudaMemcpyHostToDevice);
                                    
-    cuda_reduction<<<1, N>>>(arr_ull_dev, N, ret_ull_dev);
+    cuda_reduction<<<1, N>>>(arr_dev, N, ret_dev);
 
     cudaDeviceSynchronize();
 
-    cudaMemcpy((BYTE *)ret_ull, (BYTE *)ret_ull_dev, 1 * sizeof(ull_t), cudaMemcpyDeviceToHost);
-    
-    (*ret_ull) ^= mask;
-    memcpy(ret_double, ret_ull, sizeof(ull_t));
-    std::cout << "[main] (cuda) The minimum value: " << *ret_double << '\n';
+    cudaMemcpy((BYTE *)ret, (BYTE *)ret_dev, 1 * sizeof(double), cudaMemcpyDeviceToHost);
+    std::cout << "[main] (cuda) The minimum value: " << *ret << '\n';
 
-    *ret_double = CPU_reduction(arr, N);
-    std::cout << "[main] (cpu) The minimum value: " << *ret_double << '\n';
+    *ret= CPU_reduction(arr, N);
+    std::cout << "[main] (cpu) The minimum value: " << *ret << '\n';
     
-    delete ret_ull;
-    delete ret_double;
+    delete ret;
     delete [] arr;
     return 0;
 }
