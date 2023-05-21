@@ -41,7 +41,7 @@ __global__ void cuda_reduction(double *arr, int n, double *ret) {
     
     unsigned int tid = threadIdx.x;
 
-    __shared__ WORD sm[N];
+    __shared__ WORD sm[N * 2];
     double *sm_double = (double *)sm;
 
     sm_double[tid] = arr[tid];
@@ -66,6 +66,8 @@ __global__ void cuda_reduction(double *arr, int n, double *ret) {
 
 
 int main() {
+
+    srand(time(0));
 
     double *ret = new double;
     double *arr = new double[N];
