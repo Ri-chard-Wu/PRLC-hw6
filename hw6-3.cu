@@ -1,7 +1,7 @@
 #include <iostream>
 #include <random>
 
-#define N 32
+#define N 1024
 typedef unsigned int WORD;
 typedef unsigned char BYTE;
 using namespace std;
@@ -29,34 +29,27 @@ double fRand(double fMin, double fMax)
 
 void generate_random_doubles(double *arr, int n){
     for(int i = 0; i < n; i++){
-        arr[i] = fRand(0., 50000.);
+        arr[i] = fRand(0., 10000.);
     }
 }
 
 // linear addressing.
 
 __global__ void cuda_reduction(double *arr, int n, double *ret) {
-   
-    
-    unsigned int tid = threadIdx.x;
 
+    unsigned int tid = threadIdx.x;
     __shared__ WORD sm[N * 2];
     double *sm_double = (double *)sm;
-
     sm_double[tid] = arr[tid];
 
     __syncthreads();
 
-
     for (unsigned int s = blockDim.x / 2; s > 0; s >>= 1) {
-        
         if (tid < s) {
             sm_double[tid] = min(sm_double[tid], sm_double[tid + s]);
         }
-
         __syncthreads();
     }
-
     if (tid == 0) *ret = sm_double[0];
 }
 
@@ -64,7 +57,7 @@ __global__ void cuda_reduction(double *arr, int n, double *ret) {
 
 int main() {
 
-    srand(time(0));
+    // srand(time(0));
 
     double *ret = new double;
     double *arr = new double[N];

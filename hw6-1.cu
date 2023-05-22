@@ -58,39 +58,32 @@ __device__ double atomicAdd_double(double* address, double val)
 
 
 
-__device__ double atomicMin_double(double* address, double val)
+__device__ double atomicMin_double(double *address, double val)
 {
-    ull_t* address_as_ull = (unsigned long long int*)address;
+    ull_t *address_as_ull = (unsigned long long int*)address;
     ull_t assumed, new_value;
     ull_t old_value = *address_as_ull;
-
     do {
         assumed = old_value;
-
         if(val < __longlong_as_double(old_value)){
             new_value = __double_as_longlong(val);
         }
         else{
             new_value = old_value;
         }
-
         old_value = atomicCAS(address_as_ull, assumed, new_value);
-    
-
-    // Note: uses integer comparison to avoid hang in case of NaN (since NaN != NaN)
+                                
+    // Note: uses integer comparison to avoid
+            // hang in case of NaN (since NaN != NaN)
     } while (assumed != old_value);
-
     return __longlong_as_double(old_value);
 }
-
 
 
 __global__ void cuda_reduction(double *arr, int n, double *ret) {
    
     unsigned int tid = threadIdx.x;
-
     double item_local = arr[tid];
-
     atomicMin_double(ret, item_local);
 }
 
@@ -101,7 +94,7 @@ __global__ void cuda_reduction(double *arr, int n, double *ret) {
 
 int main() {
 
-    srand(time(0));
+    // srand(time(0));
 
 
     double *ret = new double;

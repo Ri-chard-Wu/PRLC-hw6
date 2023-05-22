@@ -33,27 +33,70 @@ void generate_random_doubles(double *arr, int n){
     }
 }
 
-// interleaved
 
-__global__ void cuda_reduction(double *arr, int n, double *ret) {
-   
-    unsigned int tid = threadIdx.x;
 
-    __shared__ WORD sm[N * 2];
-    double *sm_double = (double *)sm;
+// __device__ inline
+// double __shfl_down_double(double var, unsigned int srcLane, int width=32) {
+//   int2 a = *reinterpret_cast<int2*>(&var);
+//   a.x = __shfl_down(a.x, srcLane, width);
+//   a.y = __shfl_down(a.y, srcLane, width);
+//   return *reinterpret_cast<double*>(&a);
+// }
 
-    sm_double[tid] = arr[tid];
-    __syncthreads();
 
-    for(unsigned int s = 1; s < blockDim.x; s *= 2) {
-        
-        if (tid % (2 * s) == 0) {
-            sm_double[tid] = min(sm_double[tid], sm_double[tid + s]);
-        }
-        __syncthreads();
+
+
+__inline__ __device__
+double warpReduceSum(double val) {
+
+    for (int offset = warpSize / 2; offset > 0; offset >>= 1) {
+
+        double val_other = __shfl_down(val, offset);
+        val = min(val, val_other);
+
     }
 
-    if (tid == 0) *ret = sm_double[0];
+    return val;
+}
+
+
+
+
+
+__inline__ __device__
+double blockReduceSum(double val) {
+
+    __shared__ double shared[32]; 
+    int lane = threadIdx.x % warpSize;
+    int wid = threadIdx.x / warpSize;
+
+    val = warpReduceSum(val);    
+
+    if (lane == 0) shared[wid] = val; 
+
+    __syncthreads();             
+
+
+
+    val = (threadIdx.x < blockDim.x / warpSize) ? shared[lane] : 1000000.;
+
+    if (wid==0) val = warpReduceSum(val); 
+
+    return val;
+}
+
+
+
+__global__ void cuda_reduction(double *arr, int n, double *ret) {
+
+    unsigned int tid = threadIdx.x;
+    double val = arr[tid];
+    
+    __syncthreads();
+
+    val = blockReduceSum(val);
+
+    if (tid == 0) *ret = val;
 }
 
 
