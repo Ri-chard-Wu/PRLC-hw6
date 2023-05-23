@@ -50,6 +50,12 @@ __global__ void cuda_reduction(double *arr, int n, double *ret) {
         if (tid % (2 * s) == 0) {
             sm_double[tid] = min(sm_double[tid], sm_double[tid + s]);
         }
+
+        // int index = 2 * s * tid;
+        // if (index < blockDim.x) {
+        //     sm_double[index] = min(sm_double[index], sm_double[index + s]);
+        // }
+
         __syncthreads();
     }
 
